@@ -1,4 +1,4 @@
-package com.example;
+package com.example.pack1to20;
 
 /**
  * Created by majie on 15/12/15.
@@ -7,16 +7,16 @@ public class AddTwoNumbers {
 
     /**
      * You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-     * <p/>
+     * <p>
      * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
      * Output: 7 -> 0 -> 8
      */
 
     public static class ListNode {
-        int val;
-        ListNode next;
+        public int val;
+        public ListNode next;
 
-        ListNode(int x) {
+        public ListNode(int x) {
             val = x;
         }
     }
