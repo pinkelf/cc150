@@ -34,5 +34,8 @@ public class LeetCode {
         //6 ZigZag Conversion
         System.out.println("6.zigzag conversion = " + ZigZagConversion.convert("abcdefghijklmnopq", 5));
 
+        //7 Reverse Integer
+        System.out.println("7 reverse integer = " + ReverseInteger.reverse(123456));
+
     }
 }
