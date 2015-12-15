@@ -8,42 +8,42 @@ public class MedianOfTwoSortedArrays {
     /**
      * There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
      */
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int length1 = nums1.length;
-        int length2 = nums2.length;
-        if (length1 == 0 && length2 == 0) {
-            return 0;
-        } else if (length1 == 0) {
-            if (length2 % 2 == 1) {
-                return nums2[length2 / 2];
-            } else {
-                return ((double) nums2[length2 / 2] + nums2[length2 / 2 + 1]) / 2;
-            }
-        } else if (length2 == 0) {
-            if (length1 % 2 == 1) {
-                return nums1[length1 / 2];
-            } else {
-                return ((double) nums1[length1 / 2] + nums1[length1 / 2 + 1]) / 2;
-            }
-        }
 
-        //findIndex the mid element.
-        //%2 == 1
-        //the mid have (m+n)/2 elements bigger and (m+n)/2 elements smaller, and index is (m+n)/2
-        //%2 == 0
-        //the mid have (m+n)/2 -1 elements bigger and (m+n)/2 -1 elements smaller and index is (m+n)/2 -1, (m+n)/2
-        if ((length1 + length2) % 2 == 1) {
-            return findIndex(nums1, 0, length1 - 1, nums2, 0, length2 - 1, (length1 + length2) / 2);
-        } else {
-            return (findIndex(nums1, 0, length1 - 1, nums2, 0, length2 - 1, (length1 + length2) / 2 - 1) + findIndex(nums1, 0, length1 - 1, nums2, 0, length2 - 1, (length1 + length2) / 2)) * 0.5;
-        }
-
-
+    public static double findMedianSortedArrays(int[] A, int[] B) {
+        int m = A.length, n = B.length;
+        // deal with even & odd
+        int l = (m + n + 1) / 2;
+        int r = (m + n + 2) / 2;
+        return (getkth(A, 0, B, 0, l) + getkth(A, 0, B, 0, r)) / 2.0;
     }
 
-    //TODO
-    private static double findIndex(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int index) {
-        return 0;
+    private static double getkth(int[] A, int aStart, int[] B, int bStart, int k) {
+        //result judge
+        if (aStart > A.length - 1) {
+            return B[bStart + k - 1];
+        }
+        if (bStart > B.length - 1) {
+            return A[aStart + k - 1];
+        }
+        if (k == 1) {
+            return Math.min(A[aStart], B[bStart]);
+        }
+
+
+        //get the k/2 number from each array
+        int aMid = Integer.MAX_VALUE, bMid = Integer.MAX_VALUE;
+        if (aStart + k / 2 - 1 < A.length) {
+            aMid = A[aStart + k / 2 - 1];
+        }
+        if (bStart + k / 2 - 1 < B.length) {
+            bMid = B[bStart + k / 2 - 1];
+        }
+
+        if (aMid < bMid)
+            //a<b means the kth number is in A[astart +k/2, .... , astart+k] & B[bstart, .... , bstart+k/2]
+            return getkth(A, aStart + k / 2, B, bStart, k - k / 2);
+        else
+            return getkth(A, aStart, B, bStart + k / 2, k - k / 2);
     }
 
 }
