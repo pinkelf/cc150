@@ -1,5 +1,6 @@
 package com.example;
 
+
 import com.example.pack1to20.AddTwoNumbers;
 import com.example.pack1to20.ContainerWithMostWater;
 import com.example.pack1to20.FourSum;
@@ -26,13 +27,13 @@ public class LeetCode {
         System.out.println("1.two sum = " + Arrays.toString(TwoSum.twoSum(new int[]{1, 2, 4, 5, 10, 15}, 9)));
 
         //2 add two numbers
-        AddTwoNumbers.ListNode a = new AddTwoNumbers.ListNode(1);
-        a.next = new AddTwoNumbers.ListNode(2);
-        a.next.next = new AddTwoNumbers.ListNode(3);
-        AddTwoNumbers.ListNode b = new AddTwoNumbers.ListNode(9);
-        b.next = new AddTwoNumbers.ListNode(3);
-        b.next.next = new AddTwoNumbers.ListNode(5);
-        AddTwoNumbers.ListNode r2 = AddTwoNumbers.addTwoNumbers(a, b);
+        ListNode a = new ListNode(1);
+        a.next = new ListNode(2);
+        a.next.next = new ListNode(3);
+        ListNode b = new ListNode(9);
+        b.next = new ListNode(3);
+        b.next.next = new ListNode(5);
+        ListNode r2 = AddTwoNumbers.addTwoNumbers(a, b);
         System.out.print("2.add two numbers = ");
         while (r2 != null) {
             System.out.print(r2.val + "->");
@@ -93,5 +94,16 @@ public class LeetCode {
 
         //20 Valid Parentheses
         System.out.println("20. Valid Parentheses = " + ValidParenthese.isValid("(){[]}"));
+
+        //21 merge two sort arrays
+        System.out.println("21. Merge two sorted Lists ");
+
+        //22 Generate Parentheses
+
+        //23 merge k sort arrays
+        System.out.println("23. Merge K sorted Lists ");
+
+        //24 Swap Node in Pairs
+        System.out.println("24. Swap Node in Pairs ");
     }
 }

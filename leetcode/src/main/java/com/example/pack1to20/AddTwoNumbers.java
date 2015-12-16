@@ -1,5 +1,7 @@
 package com.example.pack1to20;
 
+import com.example.ListNode;
+
 /**
  * Created by majie on 15/12/15.
  */
@@ -7,19 +9,10 @@ public class AddTwoNumbers {
 
     /**
      * You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-     * <p>
+     * <p/>
      * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
      * Output: 7 -> 0 -> 8
      */
-
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode list = new ListNode(0);
