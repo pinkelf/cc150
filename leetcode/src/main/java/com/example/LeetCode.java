@@ -2,7 +2,9 @@ package com.example;
 
 import com.example.pack1to20.AddTwoNumbers;
 import com.example.pack1to20.ContainerWithMostWater;
+import com.example.pack1to20.FourSum;
 import com.example.pack1to20.IntegerToRoman;
+import com.example.pack1to20.LetterCombinationsOfAPhoneNumber;
 import com.example.pack1to20.LongestCommonPrefix;
 import com.example.pack1to20.LongestPalindromicSubstring;
 import com.example.pack1to20.MedianOfTwoSortedArrays;
@@ -11,7 +13,9 @@ import com.example.pack1to20.ReverseInteger;
 import com.example.pack1to20.RomanToInteger;
 import com.example.pack1to20.StringToInteger;
 import com.example.pack1to20.ThreeSum;
+import com.example.pack1to20.ThreeSumClosest;
 import com.example.pack1to20.TwoSum;
+import com.example.pack1to20.ValidParenthese;
 import com.example.pack1to20.ZigZagConversion;
 
 import java.util.Arrays;
@@ -74,5 +78,20 @@ public class LeetCode {
 
         //15 3Sum
         System.out.println("15. 3sum = " + ThreeSum.threeSum(new int[]{-5, -2, 0, 9, 10, 3, 4, -1,}));
+
+        //16 3Sum Closest
+        System.out.println("16. 3sum closest = " + ThreeSumClosest.threeSumClosest(new int[]{-1, -5, 7, 9, 10, 28}, 5));
+
+        //17 Letter Combinations of a Phone Number
+        System.out.println("17. Letter Combinations of a Phone Number = " + LetterCombinationsOfAPhoneNumber.letterCombinations("12345"));
+
+        //18 4Sum
+        System.out.println("18. 4Sum = " + FourSum.fourSum(new int[]{-1, -5, 7, 9, 10, 28, 4, 3, 2, 9, -15, -10}, 5));
+
+        //19 Remove Nth Node From End of List
+        System.out.println("19. Remove Nth Node From End of List");
+
+        //20 Valid Parentheses
+        System.out.println("20. Valid Parentheses = " + ValidParenthese.isValid("(){[]}"));
     }
 }
