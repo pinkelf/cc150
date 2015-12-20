@@ -18,6 +18,11 @@ import com.example.pack1to20.ThreeSumClosest;
 import com.example.pack1to20.TwoSum;
 import com.example.pack1to20.ValidParenthese;
 import com.example.pack1to20.ZigZagConversion;
+import com.example.pack21to40.GenerateParentheses;
+import com.example.pack21to40.ImplementstrStr;
+import com.example.pack21to40.MergeKSortList;
+import com.example.pack21to40.RemoveDuplicatesfromSortedArray;
+import com.example.pack21to40.RemoveElement;
 
 import java.util.Arrays;
 
@@ -99,11 +104,23 @@ public class LeetCode {
         System.out.println("21. Merge two sorted Lists ");
 
         //22 Generate Parentheses
+        System.out.println("22. Generate Parentheses " + GenerateParentheses.generateParenthesis(3));
 
         //23 merge k sort arrays
         System.out.println("23. Merge K sorted Lists ");
 
         //24 Swap Node in Pairs
         System.out.println("24. Swap Node in Pairs ");
+
+        //25 Reverse Nodes in k-Group
+
+        //26 Remove Duplicates from Sorted Array
+        System.out.println("26. Remove Duplicates from Sorted Array " + RemoveDuplicatesfromSortedArray.removeDuplicates(new int[]{1, 1, 1, 2, 2, 5, 5, 19, 20}));
+
+        //27 Remove Element
+        System.out.println("27. Remove Element " + RemoveElement.removeElement(new int[]{1, 2, 3}, 2));
+
+        //28 Implement strStr()
+        System.out.println("28. Implement strStr " + ImplementstrStr.strStr("abcdefg", "bcd"));
     }
 }
