@@ -20,9 +20,9 @@ import com.example.pack1to20.ValidParenthese;
 import com.example.pack1to20.ZigZagConversion;
 import com.example.pack21to40.GenerateParentheses;
 import com.example.pack21to40.ImplementstrStr;
-import com.example.pack21to40.MergeKSortList;
 import com.example.pack21to40.RemoveDuplicatesfromSortedArray;
 import com.example.pack21to40.RemoveElement;
+import com.example.pack21to40.*;
 
 import java.util.Arrays;
 
@@ -113,6 +113,14 @@ public class LeetCode {
         System.out.println("24. Swap Node in Pairs ");
 
         //25 Reverse Nodes in k-Group
+        ListNode a1 = new ListNode(1);
+        ListNode a2 =new ListNode(2);
+        ListNode a3 = new ListNode(3);
+        ListNode a5 = new ListNode(4);
+        a1.next = a2;
+        a2.next =a3;
+        a3.next =a5;
+        System.out.println("25. Reverse Nodes in k-Group " + ReverseNodesInKGroup.reverseKGroup(a1, 2));
 
         //26 Remove Duplicates from Sorted Array
         System.out.println("26. Remove Duplicates from Sorted Array " + RemoveDuplicatesfromSortedArray.removeDuplicates(new int[]{1, 1, 1, 2, 2, 5, 5, 19, 20}));
