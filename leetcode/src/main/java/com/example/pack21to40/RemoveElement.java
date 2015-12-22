@@ -6,6 +6,15 @@ import java.util.Arrays;
  * Created by Administrator on 2015/12/20.
  */
 public class RemoveElement {
+    /**
+     * Given an array and a value, remove all instances of that value in place and return the new length.
+     * <p/>
+     * The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+     *
+     * @param nums
+     * @param val
+     * @return
+     */
     public static int removeElement(int[] nums, int val) {
         if (nums.length < 1) {
             return 0;

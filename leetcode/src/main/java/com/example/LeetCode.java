@@ -114,12 +114,12 @@ public class LeetCode {
 
         //25 Reverse Nodes in k-Group
         ListNode a1 = new ListNode(1);
-        ListNode a2 =new ListNode(2);
+        ListNode a2 = new ListNode(2);
         ListNode a3 = new ListNode(3);
         ListNode a5 = new ListNode(4);
         a1.next = a2;
-        a2.next =a3;
-        a3.next =a5;
+        a2.next = a3;
+        a3.next = a5;
         System.out.println("25. Reverse Nodes in k-Group " + ReverseNodesInKGroup.reverseKGroup(a1, 2));
 
         //26 Remove Duplicates from Sorted Array
@@ -130,5 +130,23 @@ public class LeetCode {
 
         //28 Implement strStr()
         System.out.println("28. Implement strStr " + ImplementstrStr.strStr("abcdefg", "bcd"));
+
+        //29
+
+        //30
+
+        //31 Next Permutation
+        NextPermutation.nextPermutation(new int[]{1, 2, 3, 5, 4});
+        System.out.println("31. Next Permutation");
+
+        //32
+
+        //33
+
+        //34 Search for a range
+        System.out.println("34. search for a range " + SearchForARange.searchRange(new int[]{1, 2, 3, 4, 5, 5, 5, 8, 9}, 5));
+
+        //35 SearchInsertPosition
+        System.out.println("35. seach insert position " + SearchInsertPosition.searchInsert(new int[]{1, 2, 5, 8, 10}, 6));
     }
 }

@@ -6,6 +6,13 @@ import com.example.ListNode;
  * Created by majie on 15/12/16.
  */
 public class MergeTwoSortedList {
+    /**
+     * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+     *
+     * @param l1
+     * @param l2
+     * @return
+     */
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {
