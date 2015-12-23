@@ -21,7 +21,7 @@ public class ImplementstrStr {
 
         while (i < length && j < size) {
             if (haystack.charAt(i) != needle.charAt(j)) {
-                //FIXME maybe wrong, accept but looks werid. will update with KMP.
+                //TODO check one by one, accepted but slow. will update with KMP.
                 i = i - j + 1;
                 j = 0;
             } else {
