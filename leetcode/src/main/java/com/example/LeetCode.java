@@ -138,15 +138,17 @@ public class LeetCode {
 
         //38
 
-        //39
+        //39 Combination Sum
+        System.out.println("39 Combination Sum " + CombinationSum.combinationSum(new int[]{2, 3, 5, 7}, 11));
 
-        //40
+        //40 Combination Sum2
+        System.out.println("40 Combination Sum2 " + CombinationSum2.combinationSum2(new int[]{2, 5, 4, 9, 1, 7, 6}, 11));
 
         //41 First Missing Positive
         System.out.println("41. First Missing Positive " + FirstMissingPositive.firstMissingPositive(new int[]{1, 2, 3, 8, 9, 10, 5, 7, 4}));
 
         //42 Trapping rain water
-        System.out.println("42. Trapping rain water " + TrappingRainWater.trap(new int[]{2, 1, 3}));
+        System.out.println("42. Trapping rain water " + TrappingRainWater.trap(new int[]{2, 1, 3, 1, 4}));
 
 
     }
