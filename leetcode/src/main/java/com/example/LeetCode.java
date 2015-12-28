@@ -150,6 +150,21 @@ public class LeetCode {
         //42 Trapping rain water
         System.out.println("42. Trapping rain water " + TrappingRainWater.trap(new int[]{2, 1, 3, 1, 4}));
 
+        //43
+
+        //44
+
+        //45
+
+        //46 Permutations
+        System.out.println("46. Permutations " + Permutations.permute(new int[]{1, 2, 3}));
+
+        //47 Permutations 2
+        System.out.println("47. Permutations 2 " + Permutations2.permuteUnique(new int[]{1, 2, 1}));
+
+        //60 PermutationSequence
+        System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
+
 
     }
 }
