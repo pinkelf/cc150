@@ -162,6 +162,13 @@ public class LeetCode {
         //47 Permutations 2
         System.out.println("47. Permutations 2 " + Permutations2.permuteUnique(new int[]{1, 2, 1}));
 
+        //48 Rotate Image
+        System.out.println("48. Rotate Image ");
+        RotateImage.rotate(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}});
+
+        //49 GroupAnagrams
+        System.out.println("49 GroupAnagrams " + GroupAnagrams.groupAnagrams(new String[]{"abc", "bca", "ade","abdcde"}));
+
         //60 PermutationSequence
         System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
 
