@@ -167,7 +167,10 @@ public class LeetCode {
         RotateImage.rotate(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}});
 
         //49 GroupAnagrams
-        System.out.println("49 GroupAnagrams " + GroupAnagrams.groupAnagrams(new String[]{"abc", "bca", "ade","abdcde"}));
+        System.out.println("49 GroupAnagrams " + GroupAnagrams.groupAnagrams(new String[]{"abc", "bca", "ade", "abdcde"}));
+
+        //50 Pow(x,n)
+        System.out.println("50 Pow(x,n) " + Pow.myPow(23.4, 3));
 
         //60 PermutationSequence
         System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
