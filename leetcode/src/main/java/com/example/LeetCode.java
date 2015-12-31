@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.pack1to50.*;
+import com.example.pack51to100.SpiralMatrix;
 
 import java.util.Arrays;
 
@@ -171,6 +172,9 @@ public class LeetCode {
 
         //50 Pow(x,n)
         System.out.println("50 Pow(x,n) " + Pow.myPow(23.4, 3));
+
+        //54 Spiral Matrix
+        System.out.println("54 Spiral Matrix " + SpiralMatrix.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}));
 
         //60 PermutationSequence
         System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
