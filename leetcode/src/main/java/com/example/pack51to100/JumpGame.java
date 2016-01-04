@@ -6,18 +6,18 @@ package com.example.pack51to100;
 public class JumpGame {
     /**
      * Given an array of non-negative integers, you are initially positioned at the first index of the array.
-     * <p/>
+     * <p>
      * Each element in the array represents your maximum jump length at that position.
-     * <p/>
+     * <p>
      * Determine if you are able to reach the last index.
-     * <p/>
+     * <p>
      * For example:
      * A = [2,3,1,1,4], return true.
-     * <p/>
+     * <p>
      * A = [3,2,1,0,4], return false.
      */
 
-    public boolean canJump(int[] nums) {
+    public static boolean canJump(int[] nums) {
         int linkIndex = nums.length - 1;
         int i = nums.length - 2;
         while (i > -1) {

@@ -1,12 +1,23 @@
 package com.example;
 
-import com.example.pack1to50.*;
+import com.example.pack1to50.CombinationSum;
+import com.example.pack1to50.CombinationSum2;
+import com.example.pack1to50.FirstMissingPositive;
+import com.example.pack1to50.GroupAnagrams;
+import com.example.pack1to50.Permutations;
+import com.example.pack1to50.Permutations2;
+import com.example.pack1to50.Pow;
+import com.example.pack1to50.RotateImage;
+import com.example.pack1to50.TrappingRainWater;
 import com.example.pack51to100.JumpGame;
 import com.example.pack51to100.LengthOfLastWord;
+import com.example.pack51to100.MergeIntervals;
 import com.example.pack51to100.SpiralMatrix;
 import com.example.pack51to100.SpiralMatrix2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class LeetCode {
     public static void main(String... args) {
@@ -181,6 +192,14 @@ public class LeetCode {
 
         //55 Jump Game
         System.out.println("55 Jump Game " + JumpGame.canJump(new int[]{3, 2, 1, 0, 4}));
+
+        //56 Merge Intervals
+        List<Interval> list = new ArrayList<>();
+        list.add(new Interval(2, 3));
+        list.add(new Interval(4, 6));
+        list.add(new Interval(7, 8));
+        list.add(new Interval(1, 10));
+        System.out.println("56 Merge Intervals " + MergeIntervals.merge(list).toString());
 
         //58 Length of Last Word
         System.out.println("58 Length of Last Word " + LengthOfLastWord.lengthOfLastWord("hello world"));
