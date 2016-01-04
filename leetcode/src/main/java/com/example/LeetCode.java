@@ -1,7 +1,9 @@
 package com.example;
 
 import com.example.pack1to50.*;
+import com.example.pack51to100.LengthOfLastWord;
 import com.example.pack51to100.SpiralMatrix;
+import com.example.pack51to100.SpiralMatrix2;
 
 import java.util.Arrays;
 
@@ -175,6 +177,13 @@ public class LeetCode {
 
         //54 Spiral Matrix
         System.out.println("54 Spiral Matrix " + SpiralMatrix.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}));
+
+        //58 Length of Last Word
+        System.out.println("58 Length of Last Word " + LengthOfLastWord.lengthOfLastWord("hello world"));
+
+        //59 Spiral Matrix
+        System.out.println("59 Spiral Matrix 2");
+        SpiralMatrix2.generateMatrix(3);
 
         //60 PermutationSequence
         System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
