@@ -14,6 +14,7 @@ import com.example.pack51to100.LengthOfLastWord;
 import com.example.pack51to100.MergeIntervals;
 import com.example.pack51to100.SpiralMatrix;
 import com.example.pack51to100.SpiralMatrix2;
+import com.example.pack51to100.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -200,6 +201,12 @@ public class LeetCode {
         list.add(new Interval(7, 8));
         list.add(new Interval(1, 10));
         System.out.println("56 Merge Intervals " + MergeIntervals.merge(list).toString());
+
+        //57 Insert Intervals
+        List<Interval> list2 = new ArrayList<>();
+        list2.add(new Interval(-1, 3));
+        list2.add(new Interval(6, 7));
+        System.out.println("57 Insert Intervals " + InsertIntervals.insert(list2, new Interval(4, 5)).toString());
 
         //58 Length of Last Word
         System.out.println("58 Length of Last Word " + LengthOfLastWord.lengthOfLastWord("hello world"));
