@@ -218,6 +218,24 @@ public class LeetCode {
         //60 PermutationSequence
         System.out.println("60. PermutationSequence " + com.example.pack51to100.PermutationSequence.getPermutation(3, 6));
 
+        //62 Unique Paths
+        System.out.println("62 Unique Paths " + UniquePath.uniquePaths(5, 6));
+
+        //63 Unique Paths 2
+        System.out.println("63 Unique Paths 2 " + UniquePath2.uniquePathsWithObstacles(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}));
+
+        //64 Minimum Path Sum
+        System.out.println("64 Minimum Path Sum " + MinimumPathSum.minPathSum(new int[][]{{1, 2, 3}, {1, 2, 1}, {2, 1, 3}}));
+
+        //66 Plus One
+        System.out.println("66 Plus One " + PlusOne.plusOne(new int[]{1, 1, 0, 1}));
+
+        //67 Add Binary
+        System.out.println("67 Add Binary " + AddBinary.addBinary("111", "101"));
+
+        //70 Climbing Stairs
+        System.out.println("70 Climbing Stairs " + ClimbingStairs.climbStairs(9));
+
 
     }
 }
