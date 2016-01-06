@@ -226,6 +226,10 @@ public class LeetCode {
         //70 Climbing Stairs
         System.out.println("70 Climbing Stairs " + ClimbingStairs.climbStairs(9));
 
+        //73 Set Matrix Zeroes
+        System.out.println("73 Set Matrix Zeroes ");
+        SetMatrixZeroes.setZeroes(new int[][]{{1, 2, 3}, {4, 0, 5}});
+
 
     }
 }
