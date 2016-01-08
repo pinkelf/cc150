@@ -234,6 +234,10 @@ public class LeetCode {
         //74 Search 2D Matrix
         System.out.println("74 Search 2D Matrix " + Search2DMatrix.searchMatrix(new int[][]{{1, 2, 3, 4}, {6, 7, 8, 9}, {13, 18, 29, 33}}, 45));
 
+        //75 Sort Colors
+        System.out.println("75 Sort Colors ");
+        SortColors.sortColors(new int[]{1,0});
+
 
     }
 }
