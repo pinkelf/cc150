@@ -157,7 +157,8 @@ public class LeetCode {
 
         //44
 
-        //45
+        //45 Jump Game2
+        System.out.println("45 Jump Game 2 " + JumpGame2.jump(new int[]{2, 3, 1, 1, 2, 5, 1, 2, 3}));
 
         //46 Permutations
         System.out.println("46. Permutations " + Permutations.permute(new int[]{1, 2, 3}));
@@ -229,6 +230,9 @@ public class LeetCode {
         //73 Set Matrix Zeroes
         System.out.println("73 Set Matrix Zeroes ");
         SetMatrixZeroes.setZeroes(new int[][]{{1, 2, 3}, {4, 0, 5}});
+
+        //74 Search 2D Matrix
+        System.out.println("74 Search 2D Matrix " + Search2DMatrix.searchMatrix(new int[][]{{1, 2, 3, 4}, {6, 7, 8, 9}, {13, 18, 29, 33}}, 45));
 
 
     }
