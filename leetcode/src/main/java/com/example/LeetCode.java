@@ -176,6 +176,12 @@ public class LeetCode {
         //50 Pow(x,n)
         System.out.println("50 Pow(x,n) " + Pow.myPow(23.4, 3));
 
+        //51 N-Queens
+        System.out.println("51 N-Queens " + NQueens.solveNQueens(4).toString());
+
+        //52 N-Queens2
+        System.out.println("52 N-Queens 2 " + NQueens2.totalNQueens(8));
+
         //54 Spiral Matrix
         System.out.println("54 Spiral Matrix " + SpiralMatrix.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}));
 
@@ -236,7 +242,7 @@ public class LeetCode {
 
         //75 Sort Colors
         System.out.println("75 Sort Colors ");
-        SortColors.sortColors(new int[]{1,0});
+        SortColors.sortColors(new int[]{1, 0});
 
 
     }
