@@ -177,7 +177,7 @@ public class LeetCode {
         System.out.println("50 Pow(x,n) " + Pow.myPow(23.4, 3));
 
         //51 N-Queens
-        System.out.println("51 N-Queens " + NQueens.solveNQueens(4).toString());
+        System.out.println("51 N-Queens " + NQueens.solveNQueens(6).toString());
 
         //52 N-Queens2
         System.out.println("52 N-Queens 2 " + NQueens2.totalNQueens(8));
@@ -243,6 +243,10 @@ public class LeetCode {
         //75 Sort Colors
         System.out.println("75 Sort Colors ");
         SortColors.sortColors(new int[]{1, 0});
+
+        //82 Remove Duplicates From Sorted List 2
+        System.out.println("82 Remove Duplicates From Sorted List 2");
+        RemoveDuplicatesFromSortedList2.deleteDuplicates(a1);
 
 
     }
