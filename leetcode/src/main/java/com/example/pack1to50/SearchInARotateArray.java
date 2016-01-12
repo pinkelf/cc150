@@ -23,23 +23,20 @@ public class SearchInARotateArray {
 
     private static int search(int low, int high, int target, int[] nums) {
         if (low == high) {
-            if (nums[low] != target) {
-                return -1;
-            }
             if (nums[low] == target) {
                 return low;
+            } else {
+                return -1;
             }
         }
 
         if (low == high - 1) {
-            if (nums[low] != target && nums[high] != target) {
-                return -1;
-            }
             if (nums[low] == target) {
                 return low;
-            }
-            if (nums[high] == target) {
+            } else if (nums[high] == target) {
                 return high;
+            } else {
+                return -1;
             }
         }
 

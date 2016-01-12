@@ -244,6 +244,12 @@ public class LeetCode {
         System.out.println("75 Sort Colors ");
         SortColors.sortColors(new int[]{1, 0});
 
+        //80 Remove Duplicates from Sorted Array II My Submissions Question
+        System.out.println("80 Remove Duplicates from Sorted Array II My Submissions Question " + RemoveDuplicatesfromSortedArray2.removeDuplicates(new int[]{1, 1, 1, 2, 2, 3, 4}));
+
+        //81 Search In Rotated Sorted Array2
+        System.out.println("81 Search In Rotated Sorted Array 2 " + SearchInRotatedSortedArray2.search(new int[]{1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 7, 8, 9, 11, 12, 12}, 4));
+
         //82 Remove Duplicates From Sorted List 2
         System.out.println("82 Remove Duplicates From Sorted List 2");
         RemoveDuplicatesFromSortedList2.deleteDuplicates(a1);
