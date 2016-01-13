@@ -4,8 +4,10 @@ package com.example.pack51to100;
 import com.example.Point;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
+
 
 /**
  * Created by majie on 16/1/11.
@@ -14,21 +16,21 @@ public class NQueens {
 
     /**
      * The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
-     * <p>
-     * <p>
+     * <p/>
+     * <p/>
      * Given an integer n, return all distinct solutions to the n-queens puzzle.
-     * <p>
+     * <p/>
      * Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
-     * <p>
+     * <p/>
      * For example,
      * There exist two distinct solutions to the 4-queens puzzle:
-     * <p>
+     * <p/>
      * [
      * [".Q..",  // Solution 1
      * "...Q",
      * "Q...",
      * "..Q."],
-     * <p>
+     * <p/>
      * ["..Q.",  // Solution 2
      * "Q...",
      * "...Q",
@@ -38,6 +40,7 @@ public class NQueens {
      * @param n
      * @return
      */
+    //stack
     public static List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<List<String>>();
         Stack<Point> stack = new Stack<Point>();
@@ -126,4 +129,54 @@ public class NQueens {
         }
         result.add(list);
     }
+
+    //recursive
+    public static List<List<String>> solveNQueens2(int n) {
+        List<List<String>> result = new ArrayList<List<String>>();
+        int[] resultList = new int[n];
+        Arrays.fill(resultList, -1);
+        dfs(0, resultList, result);
+        return result;
+    }
+
+    private static void dfs(int row, int[] resultList, List<List<String>> result) {
+        if (row == resultList.length) {
+            convertResult(resultList, result);
+            return;
+        }
+
+        ArrayList<Point> list = getAvaList(row, resultList);
+        if (list.isEmpty()) {
+            return;
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            resultList[list.get(i).x] = list.get(i).y;
+            row++;
+            dfs(row, resultList, result);
+            row--;
+            resultList[list.get(i).x] = -1;
+        }
+    }
+
+    private static ArrayList<Point> getAvaList(int row, int[] resultList) {
+        ArrayList<Point> list = new ArrayList<Point>();
+        boolean isConflict;
+        for (int i = 0; i < resultList.length; i++) {
+            isConflict = false;
+            Point point = new Point(row, i);
+            for (int j = 0; j < resultList.length && resultList[j] != -1; j++) {
+                if (isConflict(new Point(j, resultList[j]), point)) {
+                    isConflict = true;
+                    break;
+                }
+            }
+            if (!isConflict) {
+                list.add(point);
+            }
+        }
+        return list;
+    }
+
+
 }
