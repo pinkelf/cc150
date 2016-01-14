@@ -247,6 +247,9 @@ public class LeetCode {
         //77 Combinations
         System.out.println("77 Combinations " + Combinations.combine(4, 2).toString());
 
+        //78 Subsets
+        System.out.println("78 Subsets " + Subsets.subsets(new int[]{1, 2, 3}).toString());
+
         //80 Remove Duplicates from Sorted Array II My Submissions Question
         System.out.println("80 Remove Duplicates from Sorted Array II My Submissions Question " + RemoveDuplicatesfromSortedArray2.removeDuplicates(new int[]{1, 1, 1, 2, 2, 3, 4}));
 

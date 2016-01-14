@@ -7,6 +7,26 @@ import java.util.List;
  * Created by majie on 16/1/13.
  */
 public class Combinations {
+
+    /**
+     * Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+     * <p>
+     * For example,
+     * If n = 4 and k = 2, a solution is:
+     * <p>
+     * [
+     * [2,4],
+     * [3,4],
+     * [2,3],
+     * [1,2],
+     * [1,3],
+     * [1,4],
+     * ]
+     *
+     * @param n
+     * @param k
+     * @return
+     */
     public static List<List<Integer>> combine(int n, int k) {
         return com(n, k, 0);
     }
