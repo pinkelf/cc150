@@ -7,13 +7,13 @@ public class LargestRectangleInHistogram {
 
     /**
      * Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * The largest rectangle is shown in the shaded area, which has area = 10 unit.
-     * <p/>
+     * <p>
      * For example,
      * Given height = [2,1,5,6,2,3],
      * return 10.
@@ -21,9 +21,19 @@ public class LargestRectangleInHistogram {
      * @param height
      * @return
      */
-
-    //FIXME TLE
+    //stack, o(n)
     public static int largestRectangleArea(int[] height) {
+        return 0;
+    }
+
+    //Segment Tree, o(nlogn)
+    public static int largestRectangleArea1(int[] height) {
+        return 0;
+    }
+
+
+    //brute force, o(n2);
+    public static int largestRectangleArea2(int[] height) {
         int l = 0;
         int h = 0;
         int max = 0;

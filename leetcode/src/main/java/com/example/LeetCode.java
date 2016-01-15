@@ -171,6 +171,9 @@ public class LeetCode {
         //52 N-Queens2
         System.out.println("52 N-Queens 2 " + NQueens2.totalNQueens(8));
 
+        //53 MaximumSubarray
+        System.out.println("53 Maximum Subarray " + MaximumSubarray.maxSubArray(new int[]{1, 2, -4, 1, 2, -1, 3}));
+
         //54 Spiral Matrix
         System.out.println("54 Spiral Matrix " + SpiralMatrix.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}));
 
@@ -250,7 +253,7 @@ public class LeetCode {
         RemoveDuplicatesFromSortedList2.deleteDuplicates(a1);
 
         //84 Largest Rectangle In Histogram
-        System.out.println("84 LargestRectangleInHistogram " + LargestRectangleInHistogram.largestRectangleArea(new int[]{1, 2, 3}));
+        System.out.println("84 LargestRectangleInHistogram " + LargestRectangleInHistogram.largestRectangleArea2(new int[]{1, 2, 3}));
 
         //86 Partition List
         System.out.println("86 Partition List ");
