@@ -259,6 +259,22 @@ public class LeetCode {
         System.out.println("86 Partition List ");
         PartitionList.partition(b, 5);
 
+        //88 Merge Sorted Array
+        System.out.println("88 Merge Sorted Array ");
+
+        //94 Binary Tree Inorder Traversal
+        com.example.TreeNode node1 = new TreeNode(1);
+        com.example.TreeNode node2 = new TreeNode(2);
+        com.example.TreeNode node3 = new TreeNode(3);
+        com.example.TreeNode node4 = new TreeNode(4);
+        node1.left = node2;
+        node1.right = node4;
+        node4.left = node3;
+        System.out.println("94 Binary Tree Inorder Traversal " + BinaryTreeInorderTraversal.inorderTraversal(node1).toString());
+
+        //96 UniqueBinarySearchTrees
+        System.out.println("96 Unique Binary Search Trees " + UniqueBinarySearchTrees.numTrees(5));
+
 
     }
 }
