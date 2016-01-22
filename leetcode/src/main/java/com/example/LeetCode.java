@@ -262,6 +262,13 @@ public class LeetCode {
         //88 Merge Sorted Array
         System.out.println("88 Merge Sorted Array ");
 
+        //89 Gray Code
+        System.out.println("89 Gray Code " + GrayCode.grayCode(4).toString());
+
+        //92 Reverse Linked List 2
+        System.out.println("92 Reverse Linked List 2");
+        ReverseLinkedList2.reverseBetween(a1, 1, 3);
+
         //94 Binary Tree Inorder Traversal
         com.example.TreeNode node1 = new TreeNode(1);
         com.example.TreeNode node2 = new TreeNode(2);
