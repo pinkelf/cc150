@@ -269,6 +269,9 @@ public class LeetCode {
         System.out.println("92 Reverse Linked List 2");
         ReverseLinkedList2.reverseBetween(a1, 1, 3);
 
+        //93 Restore IP Addresses
+        System.out.println("93 Restore IP Addresses " + RestoreIPAddress.restoreIpAddresses("0010010").toString());
+
         //94 Binary Tree Inorder Traversal
         com.example.TreeNode node1 = new TreeNode(1);
         com.example.TreeNode node2 = new TreeNode(2);
@@ -281,6 +284,7 @@ public class LeetCode {
 
         //96 UniqueBinarySearchTrees
         System.out.println("96 Unique Binary Search Trees " + UniqueBinarySearchTrees.numTrees(5));
+
 
 
     }
