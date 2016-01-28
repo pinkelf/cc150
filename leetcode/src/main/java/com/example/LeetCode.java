@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.pack1to50.*;
 import com.example.pack51to100.*;
+import com.example.pack101to150.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -285,7 +286,11 @@ public class LeetCode {
         //96 UniqueBinarySearchTrees
         System.out.println("96 Unique Binary Search Trees " + UniqueBinarySearchTrees.numTrees(5));
 
+        //100 Same Tree
+        System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
 
+        //105
+        ConstructBinaryTreefromPreorderandInorderTraversal.buildTree(new int[]{1}, new int[]{1});
 
     }
 }
