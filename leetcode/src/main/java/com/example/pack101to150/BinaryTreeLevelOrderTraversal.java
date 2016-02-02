@@ -13,7 +13,7 @@ public class BinaryTreeLevelOrderTraversal {
 
     /**
      * Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
-     * <p/>
+     * <p>
      * For example:
      * Given binary tree {3,9,20,#,#,15,7},
      * 3
@@ -36,6 +36,7 @@ public class BinaryTreeLevelOrderTraversal {
         if (root == null) {
             return result;
         }
+        //Linked list is used as queue
         LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
         queue.add(root);
 
@@ -48,9 +49,8 @@ public class BinaryTreeLevelOrderTraversal {
         LinkedList<TreeNode> newQ = new LinkedList<TreeNode>();
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
-            if (node.val != Integer.MAX_VALUE) {
-                list.add(node.val);
-            }
+            list.add(node.val);
+
             if (node.left != null) {
                 newQ.add(node.left);
             }

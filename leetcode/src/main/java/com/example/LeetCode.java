@@ -289,8 +289,19 @@ public class LeetCode {
         //100 Same Tree
         System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
 
+        //101
+
+        //102
+
+        //103
+
+        //104
+
         //105
-        ConstructBinaryTreefromPreorderandInorderTraversal.buildTree(new int[]{1}, new int[]{1});
+        System.out.println("105 Construct BinaryTree from Preorder and Inorder Traversal");
+        ConstructBinaryTreefromPreorderandInorderTraversal.buildTree(new int[]{1, 2, 4, 3}, new int[]{2, 4, 1, 3});
+
+        //107
 
     }
 }

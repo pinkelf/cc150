@@ -10,8 +10,41 @@ import java.util.ArrayList;
  */
 public class ConstructBinaryTreefromPreorderandInorderTraversal {
 
-    //FIXME TLE
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
+        if (preorder.length == 0 || inorder.length == 0) {
+            return null;
+        }
+        return getTree(preorder, 0, preorder.length, inorder, 0, inorder.length);
+    }
+
+    private static TreeNode getTree(int[] pre, int startP, int endP, int[] in, int startI, int endI) {
+        if (endP - startP != endI - startI || startP == endP || startI == endI) {
+            //error
+            return null;
+        }
+        if (endP - startP == 1) {
+            //only one element, return its node.
+            return new TreeNode(pre[startP]);
+        }
+        int val = pre[startP];
+        TreeNode root = new TreeNode(val);
+        int index = -1;
+        for (int i = startI; i < endI; i++) {
+            if (val == in[i]) {
+                index = i;
+                break;
+            }
+        }
+        //find the index in inorder, then keep endP - startP == endI - startI
+        if (index != -1) {
+            root.left = getTree(pre, startP + 1, startP + index - startI + 1, in, startI, index);
+            root.right = getTree(pre, index + 1 + endP - endI, endP, in, index + 1, endI);
+        }
+        return root;
+    }
+
+    //use ArrayList, more costs
+    public static TreeNode buildTree2(int[] preorder, int[] inorder) {
         if (preorder.length == 0) {
             return null;
         }
