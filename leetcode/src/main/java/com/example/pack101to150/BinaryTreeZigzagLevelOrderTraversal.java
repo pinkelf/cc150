@@ -31,7 +31,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
      * @param root
      * @return
      */
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         if (root == null) {
             return result;
@@ -44,7 +44,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
     }
 
 
-    public void addOneLevel(LinkedList<TreeNode> queue, List<List<Integer>> result, int level) {
+    private static void addOneLevel(LinkedList<TreeNode> queue, List<List<Integer>> result, int level) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         LinkedList<TreeNode> newQ = new LinkedList<TreeNode>();
         while (!queue.isEmpty()) {

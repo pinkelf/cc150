@@ -289,19 +289,36 @@ public class LeetCode {
         //100 Same Tree
         System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
 
-        //101
+        //101 Symmetric Tree
+        System.out.println("101 Symmetric Tree " + SymmetricTree.isSymmetric(node1));
 
-        //102
+        //102 Binary Tree Level Order Traversal
+        System.out.println("102 Binary Tree Level Order Traversal " + BinaryTreeLevelOrderTraversal.levelOrder(node1).toString());
 
-        //103
+        //103 Binary Tree Zigzag Level Order Traversal
+        System.out.println("103 Binary Tree Zigzag Level Order Traversal " + BinaryTreeZigzagLevelOrderTraversal.zigzagLevelOrder(node1).toString());
 
-        //104
+        //104 Maximum Depth of Binary Tree
+        System.out.println("104 Maximum Depth of Binary Tree " + MaximumDepthofBinaryTree.maxDepth(node1));
 
-        //105
+        //105 Construct BinaryTree from Preorder and Inorder Traversal
         System.out.println("105 Construct BinaryTree from Preorder and Inorder Traversal");
         ConstructBinaryTreefromPreorderandInorderTraversal.buildTree(new int[]{1, 2, 4, 3}, new int[]{2, 4, 1, 3});
 
-        //107
+        //106 Construct Binary Tree from Inorder and Post order Traversal
+        System.out.println("106 Construct Binary Tree from Inorder and Postorder Traversal");
+        ConstructBinaryTreefromInorderandPostorderTraversal.buildTree(new int[]{1, 2}, new int[]{1, 2});
+
+        //107 Binary Tree Level Order Traversal2
+        System.out.println("107 Binary Tree Level Order Traversal2");
+        BinaryTreeLevelOrderTraversal2.levelOrderBottom(node1);
+
+        //108 Convert Sorted Array to Binary Search Tree
+        System.out.println("108 Convert Sorted Array to Binary Search Tree");
+        ConvertSortedArraytoBinarySearchTree.sortedArrayToBST(new int[]{1, 2, 3, 4});
+
+        //109
+
 
         //110
 

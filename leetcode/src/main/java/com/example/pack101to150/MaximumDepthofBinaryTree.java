@@ -12,19 +12,18 @@ public class MaximumDepthofBinaryTree {
      * <p/>
      * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
      */
-    public class Solution {
-        public int maxDepth(TreeNode root) {
-            return length(root);
-        }
-
-        public int length(TreeNode root) {
-            if (root == null) {
-                return 0;
-            }
-            if (root.left == null && root.right == null) {
-                return 1;
-            }
-            return Math.max(length(root.left), length(root.right)) + 1;
-        }
+    public static int maxDepth(TreeNode root) {
+        return length(root);
     }
+
+    private static int length(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
+        return Math.max(length(root.left), length(root.right)) + 1;
+    }
+
 }
