@@ -260,6 +260,9 @@ public class LeetCode {
         System.out.println("86 Partition List ");
         PartitionList.partition(b, 5);
 
+        //87 Scramble String
+        System.out.println("87 Scramble String " + ScrambleString.isScramble("abc", "acb"));
+
         //88 Merge Sorted Array
         System.out.println("88 Merge Sorted Array ");
 
