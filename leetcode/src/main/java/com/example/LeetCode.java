@@ -317,14 +317,53 @@ public class LeetCode {
         System.out.println("108 Convert Sorted Array to Binary Search Tree");
         ConvertSortedArraytoBinarySearchTree.sortedArrayToBST(new int[]{1, 2, 3, 4});
 
-        //109
+        //109 Convert Sorted List to Binary Search Tree
+        System.out.println("109 Convert Sorted List to Binary Search Tree ");
+        ConvertSortedListtoBinarySearchTree.sortedListToBST(a);
 
+        //110 Balanced Binary Tree
+        TreeNode nodea = new TreeNode(1);
+        TreeNode nodeb = new TreeNode(-2);
+        TreeNode nodec = new TreeNode(-3);
+        TreeNode noded = new TreeNode(1);
+        TreeNode nodee = new TreeNode(3);
+        TreeNode nodef = new TreeNode(-2);
+        TreeNode nodeg = new TreeNode(-1);
+        nodea.left = nodeb;
+        nodea.right = nodec;
+        nodeb.left = noded;
+        nodeb.right = nodee;
+        nodec.left = nodef;
+        noded.left = nodeg;
+        System.out.println("110 Balanced Binary Tree " + BalancedBinaryTree.isBalanced(nodea));
 
-        //110
+        //111 Minimum Depth of Binary Tree
+        System.out.println("111 Minimum Depth of Binary Tree " + MinimumDepthofBinaryTree.minDepth(nodea));
 
-        //111
+        //112 Path Sum
+        System.out.println("112 Path Sum" + PathSum.hasPathSum(nodea, 2));
 
-        //112
+        //113 Path Sum 2
+        System.out.println("113  Path Sum 2 " + PathSum2.pathSum(nodea, 2).toString());
+
+        //114 Flatten Binary Tree to Linked List
+        System.out.println("114 Flatten Binary Tree to Linked List");
+        FlatternBinaryTreetoLinkedList.flatten(node1);
+
+        //118 Pascal's Triangle
+        System.out.println("118 Pascal's Triangle " + PascalTriangle.generate(5).toString());
+
+        //119 Pascal's Triangle II
+        System.out.println("119 Pascal's Triangle 2 " + PascalTriangle2.getRow(4).toString());
+
+        //120 Triangle
+        System.out.println("120 Triangle ");
+
+        //121 Best Time to Buy and Sell Stock
+        System.out.println("121 Best Time to Buy and Sell Stock " + BestTimetoBuyandSellStock.maxProfit(new int[]{1, 3, 6, 7, 9, 5, 1, 2}));
+
+        //122 Best Time to Buy and Sell Stock II
+        System.out.println("122 Best Time to Buy and Sell Stock2 " + BestTimetoBuyandSellStock2.maxProfit(new int[]{1, 3, 6, 9, 5, 7, 1, 2, 5,}));
 
     }
 }
