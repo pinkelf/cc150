@@ -243,6 +243,10 @@ public class LeetCode {
         //78 Subsets
         System.out.println("78 Subsets " + Subsets.subsets(new int[]{1, 2, 3}).toString());
 
+        //79 Word Search
+        //FIXME
+        System.out.println("79 Word Search " + WordSearch.exist(new char[][]{{'a', 'b', 'c'}, {'a', 's', 'd'}}, "ab"));
+
         //80 Remove Duplicates from Sorted Array II My Submissions Question
         System.out.println("80 Remove Duplicates from Sorted Array II My Submissions Question " + RemoveDuplicatesfromSortedArray2.removeDuplicates(new int[]{1, 1, 1, 2, 2, 3, 4}));
 
@@ -367,6 +371,10 @@ public class LeetCode {
 
         //122 Best Time to Buy and Sell Stock II
         System.out.println("122 Best Time to Buy and Sell Stock2 " + BestTimetoBuyandSellStock2.maxProfit(new int[]{1, 3, 6, 9, 5, 7, 1, 2, 5,}));
+
+        //332 ReconstructItinerary
+        //FIXME
+        System.out.println("332 Reconstruct Itinerary " + ReconstructItinerary.findItinerary(new String[][]{{"EZE", "TIA"}, {"EZE", "HBA"}, {"AXA", "TIA"}, {"JFK", "AXA"}, {"ANU", "JFK"}, {"ADL", "ANU"}, {"TIA", "AUA"}, {"ANU", "AUA"}, {"ADL", "EZE"}, {"ADL", "EZE"}, {"EZE", "ADL"}, {"AXA", "EZE"}, {"AUA", "AXA"}, {"JFK", "AXA"}, {"AXA", "AUA"}, {"AUA", "ADL"}, {"ANU", "EZE"}, {"TIA", "ADL"}, {"EZE", "ANU"}, {"AUA", "ANU"}}).toString());
 
     }
 }
