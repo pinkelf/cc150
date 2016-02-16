@@ -244,7 +244,6 @@ public class LeetCode {
         System.out.println("78 Subsets " + Subsets.subsets(new int[]{1, 2, 3}).toString());
 
         //79 Word Search
-        //FIXME
         System.out.println("79 Word Search " + WordSearch.exist(new char[][]{{'a', 'b', 'c'}, {'a', 's', 'd'}}, "ab"));
 
         //80 Remove Duplicates from Sorted Array II My Submissions Question
