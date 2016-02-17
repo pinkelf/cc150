@@ -370,10 +370,5 @@ public class LeetCode {
 
         //122 Best Time to Buy and Sell Stock II
         System.out.println("122 Best Time to Buy and Sell Stock2 " + BestTimetoBuyandSellStock2.maxProfit(new int[]{1, 3, 6, 9, 5, 7, 1, 2, 5,}));
-
-        //332 ReconstructItinerary
-        //FIXME
-        System.out.println("332 Reconstruct Itinerary " + ReconstructItinerary.findItinerary(new String[][]{{"EZE", "TIA"}, {"EZE", "HBA"}, {"AXA", "TIA"}, {"JFK", "AXA"}, {"ANU", "JFK"}, {"ADL", "ANU"}, {"TIA", "AUA"}, {"ANU", "AUA"}, {"ADL", "EZE"}, {"ADL", "EZE"}, {"EZE", "ADL"}, {"AXA", "EZE"}, {"AUA", "AXA"}, {"JFK", "AXA"}, {"AXA", "AUA"}, {"AUA", "ADL"}, {"ANU", "EZE"}, {"TIA", "ADL"}, {"EZE", "ANU"}, {"AUA", "ANU"}}).toString());
-
     }
 }
