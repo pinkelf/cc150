@@ -370,5 +370,8 @@ public class LeetCode {
 
         //122 Best Time to Buy and Sell Stock II
         System.out.println("122 Best Time to Buy and Sell Stock2 " + BestTimetoBuyandSellStock2.maxProfit(new int[]{1, 3, 6, 9, 5, 7, 1, 2, 5,}));
+
+        //125 Valid Palindrome
+        System.out.println("125 Valid Palindrome " + ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
     }
 }
