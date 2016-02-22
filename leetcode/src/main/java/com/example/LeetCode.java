@@ -373,5 +373,11 @@ public class LeetCode {
 
         //125 Valid Palindrome
         System.out.println("125 Valid Palindrome " + ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+
+        //141 Linked List Cycle
+        System.out.println("141 Linked List Cycle " + LinkedListCycle.hasCycle(a));
+
+        //142 Linked List Cycle 2
+        System.out.println("142 Linked List Cycle 2 " + LinkedListCycle2.detectCycle(a) == null ? "null" : "true");
     }
 }
