@@ -1,6 +1,6 @@
 package com.example.pack1to50;
 
-import java.util.ArrayList;
+import java.util.Stack;
 
 /**
  * Created by majie on 15/12/16.
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class ValidParenthese {
     /**
      * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-     * <p>
+     * <p/>
      * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
      */
 
@@ -18,20 +18,24 @@ public class ValidParenthese {
             return true;
         }
 
-        ArrayList<Character> list = new ArrayList<Character>();
+        Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < length; i++) {
-            if (list.isEmpty()) {
-                list.add(s.charAt(i));
+            if (stack.isEmpty()) {
+                char c = s.charAt(i);
+                if (c == ')' || c == ']' || c == '}') {
+                    return false;
+                }
+                stack.add(s.charAt(i));
                 continue;
             }
-            char l = list.get(list.size() - 1);
+            char l = stack.peek();
             char r = s.charAt(i);
             if ((r == ')' && l == '(') || (r == ']' && l == '[') || (r == '}' && l == '{')) {
-                list.remove(list.size() - 1);
+                stack.pop();
             } else {
-                list.add(s.charAt(i));
+                stack.push(r);
             }
         }
-        return list.isEmpty();
+        return stack.isEmpty();
     }
 }
