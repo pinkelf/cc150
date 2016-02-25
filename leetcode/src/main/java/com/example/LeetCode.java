@@ -380,6 +380,10 @@ public class LeetCode {
         System.out.println("141 Linked List Cycle " + LinkedListCycle.hasCycle(a));
 
         //142 Linked List Cycle 2
-        System.out.println("142 Linked List Cycle 2 " + LinkedListCycle2.detectCycle(a) == null ? "null" : "true");
+        System.out.println("142 Linked List Cycle 2 " + (LinkedListCycle2.detectCycle(a) == null ? "null" : "true"));
+
+        //143 Reorder List
+        System.out.println("143 Reorder List ");
+        ReorderList.reorderList(a1);
     }
 }
