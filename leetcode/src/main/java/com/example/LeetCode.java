@@ -3,6 +3,7 @@ package com.example;
 import com.example.pack1to50.*;
 import com.example.pack51to100.*;
 import com.example.pack101to150.*;
+import com.example.pack151to200.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -358,6 +359,10 @@ public class LeetCode {
         System.out.println("114 Flatten Binary Tree to Linked List");
         FlatternBinaryTreetoLinkedList.flatten(node1);
 
+        //116 Populating Next Right Pointers in Each Node
+        System.out.println("116 Populating Next Right Pointers in Each Node");
+        PopulatingNextRightPointersinEachNode.connect(null);
+
         //118 Pascal's Triangle
         System.out.println("118 Pascal's Triangle " + PascalTriangle.generate(5).toString());
 
@@ -376,6 +381,9 @@ public class LeetCode {
         //125 Valid Palindrome
         System.out.println("125 Valid Palindrome " + ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
 
+        //136 Single Number
+        System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
+
         //141 Linked List Cycle
         System.out.println("141 Linked List Cycle " + LinkedListCycle.hasCycle(a));
 
@@ -385,5 +393,8 @@ public class LeetCode {
         //143 Reorder List
         System.out.println("143 Reorder List ");
         ReorderList.reorderList(a1);
+
+        //151 Reverse Words in a String
+        System.out.println("151 Reverse Words in a String " + ReverseWordsinaString.reverseWords("   a    b"));
     }
 }
