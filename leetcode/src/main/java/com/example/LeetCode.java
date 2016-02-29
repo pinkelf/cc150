@@ -229,6 +229,9 @@ public class LeetCode {
         //70 Climbing Stairs
         System.out.println("70 Climbing Stairs " + ClimbingStairs.climbStairs(9));
 
+        //72 Edit Distance
+        System.out.println("72 Edit Distance " + EditDistance.minDistance("abcde", "adf"));
+
         //73 Set Matrix Zeroes
         System.out.println("73 Set Matrix Zeroes ");
         SetMatrixZeroes.setZeroes(new int[][]{{1, 2, 3}, {4, 0, 5}});
@@ -393,6 +396,9 @@ public class LeetCode {
         //143 Reorder List
         System.out.println("143 Reorder List ");
         ReorderList.reorderList(a1);
+
+        //147 Insertion Sort List
+        InsertionSortList.insertionSortList(b);
 
         //151 Reverse Words in a String
         System.out.println("151 Reverse Words in a String " + ReverseWordsinaString.reverseWords("   a    b"));
