@@ -226,6 +226,9 @@ public class LeetCode {
         //67 Add Binary
         System.out.println("67 Add Binary " + AddBinary.addBinary("111", "101"));
 
+        //68 Text Justification
+        System.out.println("68 Text Justification " + TextJustification.fullJustify(new String[]{"What", "must", "be", "shall", "be."}, 12).toString());
+
         //70 Climbing Stairs
         System.out.println("70 Climbing Stairs " + ClimbingStairs.climbStairs(9));
 
@@ -402,5 +405,11 @@ public class LeetCode {
 
         //151 Reverse Words in a String
         System.out.println("151 Reverse Words in a String " + ReverseWordsinaString.reverseWords("   a    b"));
+
+        //153 Find Minimum in Rotated Sorted Array
+        System.out.println("153 Find Minimum in Rotated Sorted Array " + FindMinimuminRotatedSortedArray.findMin(new int[]{4, 1, 2, 3}));
+
+        //154 Find Minimum in Rotated Sorted Array 2
+        System.out.println("154 Find Minimum in Rotated Sorted Array 2 " + FindMinimuminRotatedSortedArray2.findMin(new int[]{4, 1, 1, 1, 2, 2, 3}));
     }
 }
