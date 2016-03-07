@@ -411,5 +411,11 @@ public class LeetCode {
 
         //154 Find Minimum in Rotated Sorted Array 2
         System.out.println("154 Find Minimum in Rotated Sorted Array 2 " + FindMinimuminRotatedSortedArray2.findMin(new int[]{4, 1, 1, 1, 2, 2, 3}));
+
+        //160 Intersection of Two Linked Lists
+        System.out.println("160 Intersection of Two Linked Lists " + IntersectionofTwoLinkedLists.getIntersectionNode(a1, a2).val);
+
+        //164 CompareVersionNumbers
+        System.out.println("164 Compare Version Numbers " + CompareVersionNumbers.compareVersion("1.2", "1"));
     }
 }
