@@ -117,6 +117,9 @@ public class LeetCode {
         //28 Implement strStr()
         System.out.println("28. Implement strStr " + com.example.pack1to50.ImplementstrStr.strStr("abcdefg", "bcd"));
 
+        //30 SubstringwithConcatenationofAllWords
+        System.out.println("30 Substring with Concatenation of All Words " + SubstringwithConcatenationofAllWords.findSubstring("barfoothefoobarman", new String[]{"foo", "bar"}).toString());
+
         //31 Next Permutation
         com.example.pack1to50.NextPermutation.nextPermutation(new int[]{1, 2, 3, 5, 4});
         System.out.println("31. Next Permutation");
@@ -364,6 +367,9 @@ public class LeetCode {
         //114 Flatten Binary Tree to Linked List
         System.out.println("114 Flatten Binary Tree to Linked List");
         FlatternBinaryTreetoLinkedList.flatten(node1);
+
+        //115 Distinct Subsequences
+        System.out.println("115 Distinct Subsequences " + DistinctSubsequences.numDistinct("rabbbit", "rabbit"));
 
         //116 Populating Next Right Pointers in Each Node
         System.out.println("116 Populating Next Right Pointers in Each Node");
