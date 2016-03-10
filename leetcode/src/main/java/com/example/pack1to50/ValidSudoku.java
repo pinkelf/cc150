@@ -5,7 +5,7 @@ import java.util.HashSet;
 /**
  * Created by majie on 15/12/23.
  */
-public class ValidSudou {
+public class ValidSudoku {
 
     /**
      * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.

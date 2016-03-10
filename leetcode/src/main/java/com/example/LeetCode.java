@@ -136,9 +136,11 @@ public class LeetCode {
         //35 SearchInsertPosition
         System.out.println("35. seach insert position " + SearchInsertPosition.searchInsert(new int[]{1, 2, 5, 8, 10}, 6));
 
-        //36 ValidSudou
-        System.out.println("36. valid sudou");
+        //36 ValidSudoku
+        System.out.println("36. valid sudoku");
 
+        //37 Sudoku Solver
+        System.out.println("37 sudoku solver");
 
         //39 Combination Sum
         System.out.println("39 Combination Sum " + CombinationSum.combinationSum(new int[]{2, 3, 5, 7}, 11));
