@@ -190,7 +190,7 @@ public class LeetCode {
         System.out.println("55 Jump Game " + JumpGame.canJump(new int[]{3, 2, 1, 0, 4}));
 
         //56 Merge Intervals
-        List<Interval> list = new ArrayList<>();
+        List<Interval> list = new ArrayList<Interval>();
         list.add(new Interval(2, 3));
         list.add(new Interval(4, 6));
         list.add(new Interval(7, 8));
@@ -198,7 +198,7 @@ public class LeetCode {
         System.out.println("56 Merge Intervals " + MergeIntervals.merge(list).toString());
 
         //57 Insert Intervals
-        List<Interval> list2 = new ArrayList<>();
+        List<Interval> list2 = new ArrayList<Interval>();
         list2.add(new Interval(-1, 3));
         list2.add(new Interval(6, 7));
         System.out.println("57 Insert Intervals " + InsertIntervals.insert(list2, new Interval(4, 5)).toString());
@@ -305,6 +305,9 @@ public class LeetCode {
 
         //96 UniqueBinarySearchTrees
         System.out.println("96 Unique Binary Search Trees " + UniqueBinarySearchTrees.numTrees(5));
+
+        //97 isInterleave
+        System.out.println("97 Interleaving String " + IntervalString.isInterleave("a", "b", "ab"));
 
         //100 Same Tree
         System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
