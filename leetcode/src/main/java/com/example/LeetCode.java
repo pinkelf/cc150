@@ -154,6 +154,9 @@ public class LeetCode {
         //42 Trapping rain water
         System.out.println("42. Trapping rain water " + TrappingRainWater.trap(new int[]{2, 1, 3, 1, 4}));
 
+        //43 Multiply Strings
+        System.out.println("43 Multiply Strings " + MultiplyStrings.multiply("9", "9"));
+
 
         //45 Jump Game2
         System.out.println("45 Jump Game 2 " + JumpGame2.jump(new int[]{2, 3, 1, 1, 2, 5, 1, 2, 3}));
@@ -250,6 +253,9 @@ public class LeetCode {
         //75 Sort Colors
         System.out.println("75 Sort Colors ");
         SortColors.sortColors(new int[]{1, 0});
+
+        //76 Minimum Window Substring
+        System.out.println("76 Minimum Window Substring " + MinimumWindowSubstring.minWindow("ADOBECODEBANC", "ABC"));
 
         //77 Combinations
         System.out.println("77 Combinations " + Combinations.combine(4, 2).toString());
@@ -395,8 +401,17 @@ public class LeetCode {
         //122 Best Time to Buy and Sell Stock II
         System.out.println("122 Best Time to Buy and Sell Stock2 " + BestTimetoBuyandSellStock2.maxProfit(new int[]{1, 3, 6, 9, 5, 7, 1, 2, 5,}));
 
+        //124 Binary Tree Maximum Path Sum
+        System.out.println("124 Binary Tree Maximum Path Sum" + BinaryTreeMaximumPathSum.maxPathSum(node1));
+
         //125 Valid Palindrome
         System.out.println("125 Valid Palindrome " + ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+
+        //128 Longest Consecutive Sequence
+        System.out.println("128 Longest Consecutive Sequence " + LongestConsecutiveSequence.longestConsecutive(new int[]{15, 3, 5, 6, 10, 9, 7, 8}));
+
+        //129 Sum Root to Leaf Numbers
+        System.out.println("129 Sum Root to Leaf Numbers " + SumRoottoLeafNumbers.sumNumbers(node1));
 
         //136 Single Number
         System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
@@ -410,6 +425,12 @@ public class LeetCode {
         //143 Reorder List
         System.out.println("143 Reorder List ");
         ReorderList.reorderList(a1);
+
+        //144 Binary Tree Preorder Traversal
+        System.out.println("144 Binary Tree Preorder Traversal " + BinaryTreePreorderTraversal.preorderTraversal(node1).toString());
+
+        //145 Binary Tree Postorder Traversal
+        System.out.println("144 Binary Tree Postorder Traversal " + BinaryTreePostorderTraversal.postorderTraversal(node1).toString());
 
         //147 Insertion Sort List
         InsertionSortList.insertionSortList(b);

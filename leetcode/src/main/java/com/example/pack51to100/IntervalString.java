@@ -1,5 +1,7 @@
 package com.example.pack51to100;
 
+import java.util.ArrayList;
+
 /**
  * Created by Administrator on 2016/3/28.
  */
@@ -26,6 +28,7 @@ public class IntervalString {
         if (s1.length() + s2.length() != s3.length()) {
             return false;
         }
+
         if (s1.length() == 0) {
             return s3.equals(s2);
         }
