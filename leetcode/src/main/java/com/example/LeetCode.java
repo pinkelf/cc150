@@ -1,9 +1,9 @@
 package com.example;
 
-import com.example.pack1to50.*;
-import com.example.pack51to100.*;
-import com.example.pack101to150.*;
-import com.example.pack151to200.*;
+import com.example.pack1to100.*;
+import com.example.pack300to400.ReverseString;
+import com.example.pack300to400.ReverseVowelsofaString;
+import com.example.pack101to200.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import java.util.List;
 public class LeetCode {
     public static void main(String... args) {
         //1 two sum
-        System.out.println("1.two sum = " + Arrays.toString(com.example.pack1to50.TwoSum.twoSum(new int[]{1, 2, 4, 5, 10, 15}, 9)));
+        System.out.println("1.two sum = " + Arrays.toString(com.example.pack1to100.TwoSum.twoSum(new int[]{1, 2, 4, 5, 10, 15}, 9)));
 
         //2 add two numbers
         ListNode a = new ListNode(1);
@@ -21,7 +21,7 @@ public class LeetCode {
         ListNode b = new ListNode(9);
         b.next = new ListNode(3);
         b.next.next = new ListNode(5);
-        ListNode r2 = com.example.pack1to50.AddTwoNumbers.addTwoNumbers(a, b);
+        ListNode r2 = com.example.pack1to100.AddTwoNumbers.addTwoNumbers(a, b);
         System.out.print("2.add two numbers = ");
         while (r2 != null) {
             System.out.print(r2.val + "->");
@@ -30,67 +30,68 @@ public class LeetCode {
         System.out.println("");
 
         //3 Longest Substring Without Repeating Characters
-        System.out.println("3.Longest Substring Without Repeating Characters " + com.example.pack1to50.LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring1
-                ("abcdcd") + "," + com.example.pack1to50.LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring2
+        System.out.println("3.Longest Substring Without Repeating Characters " + com.example.pack1to100.LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring1
+                ("abcdcd") + "," + com.example.pack1to100.LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring2
                 ("ababcde"));
 
         //4 Median of Two Sorted Arrays
         int[] a4 = {1, 1, 1, 3};
         int[] b4 = {1, 2, 3, 4};
-        System.out.println("4.median of two sorted arrays = " + com.example.pack1to50.MedianOfTwoSortedArrays.findMedianSortedArrays(a4, b4));
+        System.out.println("4.median of two sorted arrays = " + com.example.pack1to100.MedianOfTwoSortedArrays.findMedianSortedArrays(a4, b4));
 
         //5 longest palindromic substring
-        System.out.println("5.longest palindromic substring = " + com.example.pack1to50.LongestPalindromicSubstring.longestPalindrome("abcedfghjhg1ab"));
+        System.out.println("5.longest palindromic substring = " + com.example.pack1to100.LongestPalindromicSubstring.longestPalindrome("abcedfghjhg1ab"));
 
         //6 ZigZag Conversion
-        System.out.println("6.zigzag conversion = " + com.example.pack1to50.ZigZagConversion.convert("abcdefghijklmnopq", 4));
+        System.out.println("6.zigzag conversion = " + com.example.pack1to100.ZigZagConversion.convert("abcdefghijklmnopq", 4));
 
         //7 Reverse Integer
-        System.out.println("7.reverse integer = " + com.example.pack1to50.ReverseInteger.reverse(123456));
+        System.out.println("7.reverse integer = " + com.example.pack1to100.ReverseInteger.reverse(123456));
 
         //8 String to Integer(atoi)
-        System.out.println("8.atoi = " + com.example.pack1to50.StringToInteger.myAtoi("105225"));
+        System.out.println("8.atoi = " + com.example.pack1to100.StringToInteger.myAtoi("105225"));
 
         //9 Palindrome Number
-        System.out.println("9.palindrome number = " + com.example.pack1to50.PalindromeNumber.isPalindrome(124565421));
+        System.out.println("9.palindrome number = " + com.example.pack1to100.PalindromeNumber.isPalindrome(124565421));
 
         //10 Regular Expression Matching
+        System.out.println("10 Regular Expression Matching " + RegularExpressionMatching.isMatch("aab", "c*a*b"));
 
         //11 Container With Most Water
-        System.out.println("11.Container With Most Water = " + com.example.pack1to50.ContainerWithMostWater.maxArea(new int[]{1, 4, 10, 20, 4, 8, 9}));
+        System.out.println("11.Container With Most Water = " + com.example.pack1to100.ContainerWithMostWater.maxArea(new int[]{1, 4, 10, 20, 4, 8, 9}));
 
         //12 Integer to Roman
-        System.out.println("12. integer to roman = " + com.example.pack1to50.IntegerToRoman.intToRoman(123));
+        System.out.println("12. integer to roman = " + com.example.pack1to100.IntegerToRoman.intToRoman(123));
 
         //13 Roman to Integer
-        System.out.println("13. roman to integer  = " + com.example.pack1to50.RomanToInteger.romanToInt("XVI"));
+        System.out.println("13. roman to integer  = " + com.example.pack1to100.RomanToInteger.romanToInt("XVI"));
 
         //14 Longest Common Prefix
-        System.out.println("14. longest common prefix = " + com.example.pack1to50.LongestCommonPrefix.longestCommonPrefix(new String[]{"abcd", "abc", "abde"}));
+        System.out.println("14. longest common prefix = " + com.example.pack1to100.LongestCommonPrefix.longestCommonPrefix(new String[]{"abcd", "abc", "abde"}));
 
         //15 3Sum
-        System.out.println("15. 3sum = " + com.example.pack1to50.ThreeSum.threeSum(new int[]{-5, -2, 0, 9, 10, 3, 4, -1,}));
+        System.out.println("15. 3sum = " + com.example.pack1to100.ThreeSum.threeSum(new int[]{-5, -2, 0, 9, 10, 3, 4, -1,}));
 
         //16 3Sum Closest
-        System.out.println("16. 3sum closest = " + com.example.pack1to50.ThreeSumClosest.threeSumClosest(new int[]{-1, -5, 7, 9, 10, 28}, 5));
+        System.out.println("16. 3sum closest = " + com.example.pack1to100.ThreeSumClosest.threeSumClosest(new int[]{-1, -5, 7, 9, 10, 28}, 5));
 
         //17 Letter Combinations of a Phone Number
-        System.out.println("17. Letter Combinations of a Phone Number = " + com.example.pack1to50.LetterCombinationsOfAPhoneNumber.letterCombinations("12345"));
+        System.out.println("17. Letter Combinations of a Phone Number = " + com.example.pack1to100.LetterCombinationsOfAPhoneNumber.letterCombinations("12345"));
 
         //18 4Sum
-        System.out.println("18. 4Sum = " + com.example.pack1to50.FourSum.fourSum(new int[]{-1, -5, 7, 9, 10, 28, 4, 3, 2, 9, -15, -10}, 5));
+        System.out.println("18. 4Sum = " + com.example.pack1to100.FourSum.fourSum(new int[]{-1, -5, 7, 9, 10, 28, 4, 3, 2, 9, -15, -10}, 5));
 
         //19 Remove Nth Node From End of List
         System.out.println("19. Remove Nth Node From End of List");
 
         //20 Valid Parentheses
-        System.out.println("20. Valid Parentheses = " + com.example.pack1to50.ValidParenthese.isValid("(){[]}"));
+        System.out.println("20. Valid Parentheses = " + com.example.pack1to100.ValidParenthese.isValid("(){[]}"));
 
         //21 merge two sort arrays
         System.out.println("21. Merge two sorted Lists ");
 
         //22 Generate Parentheses
-        System.out.println("22. Generate Parentheses " + com.example.pack1to50.GenerateParentheses.generateParenthesis(3));
+        System.out.println("22. Generate Parentheses " + com.example.pack1to100.GenerateParentheses.generateParenthesis(3));
 
         //23 merge k sort arrays
         System.out.println("23. Merge K sorted Lists ");
@@ -106,29 +107,29 @@ public class LeetCode {
         a1.next = a2;
         a2.next = a3;
         a3.next = a5;
-        System.out.println("25. Reverse Nodes in k-Group " + com.example.pack1to50.ReverseNodesInKGroup.reverseKGroup(a1, 2));
+        System.out.println("25. Reverse Nodes in k-Group " + com.example.pack1to100.ReverseNodesInKGroup.reverseKGroup(a1, 2));
 
         //26 Remove Duplicates from Sorted Array
-        System.out.println("26. Remove Duplicates from Sorted Array " + com.example.pack1to50.RemoveDuplicatesfromSortedArray.removeDuplicates(new int[]{1, 1, 1, 2, 2, 5, 5, 19, 20}));
+        System.out.println("26. Remove Duplicates from Sorted Array " + com.example.pack1to100.RemoveDuplicatesfromSortedArray.removeDuplicates(new int[]{1, 1, 1, 2, 2, 5, 5, 19, 20}));
 
         //27 Remove Element
-        System.out.println("27. Remove Element " + com.example.pack1to50.RemoveElement.removeElement(new int[]{1, 2, 3}, 2));
+        System.out.println("27. Remove Element " + com.example.pack1to100.RemoveElement.removeElement(new int[]{1, 2, 3}, 2));
 
         //28 Implement strStr()
-        System.out.println("28. Implement strStr " + com.example.pack1to50.ImplementstrStr.strStr("abcdefg", "bcd"));
+        System.out.println("28. Implement strStr " + com.example.pack1to100.ImplementstrStr.strStr("abcdefg", "bcd"));
 
         //30 SubstringwithConcatenationofAllWords
         System.out.println("30 Substring with Concatenation of All Words " + SubstringwithConcatenationofAllWords.findSubstring("barfoothefoobarman", new String[]{"foo", "bar"}).toString());
 
         //31 Next Permutation
-        com.example.pack1to50.NextPermutation.nextPermutation(new int[]{1, 2, 3, 5, 4});
+        com.example.pack1to100.NextPermutation.nextPermutation(new int[]{1, 2, 3, 5, 4});
         System.out.println("31. Next Permutation");
 
         //32 longest
         System.out.println("32 " + Longest.longestValidParentheses("(()()"));
 
         //33 Search in Rotated Sorted Array
-        System.out.println("33. Search in Rotated Sorted Array " + com.example.pack1to50.SearchInARotateArray.search(new int[]{284, 287, 289, 293, 295, 298, 0, 3, 8, 9, 10, 11, 12, 15, 17, 19, 20, 22, 26, 29, 30, 31, 35, 36, 37, 38, 42, 43, 45, 50, 51, 54, 56, 58, 59, 60, 62, 63, 68, 70, 73, 74, 81, 83, 84, 87, 92, 95, 99, 101, 102, 105, 108, 109, 112, 114, 115, 116, 122, 125, 126, 127, 129, 132, 134, 136, 137, 138, 139, 147, 149, 152, 153, 154, 155, 159, 160, 161, 163, 164, 165, 166, 168, 169, 171, 172, 174, 176, 177, 180, 187, 188, 190, 191, 192, 198, 200, 203, 204, 206, 207, 209, 210, 212, 214, 216, 221, 224, 227, 228, 229, 230, 233, 235, 237, 241, 242, 243, 244, 246, 248, 252, 253, 255, 257, 259, 260, 261, 262, 265, 266, 268, 269, 270, 271, 272, 273, 277, 279, 281}, 235));
+        System.out.println("33. Search in Rotated Sorted Array " + com.example.pack1to100.SearchInARotateArray.search(new int[]{284, 287, 289, 293, 295, 298, 0, 3, 8, 9, 10, 11, 12, 15, 17, 19, 20, 22, 26, 29, 30, 31, 35, 36, 37, 38, 42, 43, 45, 50, 51, 54, 56, 58, 59, 60, 62, 63, 68, 70, 73, 74, 81, 83, 84, 87, 92, 95, 99, 101, 102, 105, 108, 109, 112, 114, 115, 116, 122, 125, 126, 127, 129, 132, 134, 136, 137, 138, 139, 147, 149, 152, 153, 154, 155, 159, 160, 161, 163, 164, 165, 166, 168, 169, 171, 172, 174, 176, 177, 180, 187, 188, 190, 191, 192, 198, 200, 203, 204, 206, 207, 209, 210, 212, 214, 216, 221, 224, 227, 228, 229, 230, 233, 235, 237, 241, 242, 243, 244, 246, 248, 252, 253, 255, 257, 259, 260, 261, 262, 265, 266, 268, 269, 270, 271, 272, 273, 277, 279, 281}, 235));
 
         //34 Search for a range
         System.out.println("34. search for a range " + SearchForARange.searchRange(new int[]{1, 2, 3, 4, 5, 5, 5, 8, 9}, 5));
@@ -157,6 +158,8 @@ public class LeetCode {
         //43 Multiply Strings
         System.out.println("43 Multiply Strings " + MultiplyStrings.multiply("9", "9"));
 
+        //44 Wildcard Matching
+        System.out.println("44 Wildcard Matching " + WildcardMatching.isMatch("aab", "c*a*b"));
 
         //45 Jump Game2
         System.out.println("45 Jump Game 2 " + JumpGame2.jump(new int[]{2, 3, 1, 1, 2, 5, 1, 2, 3}));
@@ -275,6 +278,10 @@ public class LeetCode {
         //82 Remove Duplicates From Sorted List 2
         System.out.println("82 Remove Duplicates From Sorted List 2");
         RemoveDuplicatesFromSortedList2.deleteDuplicates(a1);
+
+        //83 Remove Duplicates from Sorted List
+        System.out.println("83 Remove Duplicates From Sorted List");
+        RemoveDuplicatesFromSortedList.deleteDuplicates(a1);
 
         //84 Largest Rectangle In Histogram
         System.out.println("84 LargestRectangleInHistogram " + LargestRectangleInHistogram.largestRectangleArea2(new int[]{1, 2, 3}));
@@ -413,6 +420,9 @@ public class LeetCode {
         //129 Sum Root to Leaf Numbers
         System.out.println("129 Sum Root to Leaf Numbers " + SumRoottoLeafNumbers.sumNumbers(node1));
 
+        //134 Gas Station
+        System.out.println("134 Gas Station " + GasStation.canCompleteCircuit(new int[]{4}, new int[]{5}));
+
         //136 Single Number
         System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
 
@@ -433,7 +443,15 @@ public class LeetCode {
         System.out.println("144 Binary Tree Postorder Traversal " + BinaryTreePostorderTraversal.postorderTraversal(node1).toString());
 
         //147 Insertion Sort List
+        System.out.println("147 Insertion Sort List ");
         InsertionSortList.insertionSortList(b);
+
+        //148 Sort List
+        System.out.println("148 Sort List");
+        SortList.sortList(b);
+
+        //150 Evaluate Reverse Polish Notation
+        System.out.println("150 Evaluate Reverse Polish Notation " + EvaluateReversePolishNotation.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
 
         //151 Reverse Words in a String
         System.out.println("151 Reverse Words in a String " + ReverseWordsinaString.reverseWords("   a    b"));
@@ -447,7 +465,29 @@ public class LeetCode {
         //160 Intersection of Two Linked Lists
         System.out.println("160 Intersection of Two Linked Lists " + IntersectionofTwoLinkedLists.getIntersectionNode(a1, a2).val);
 
-        //164 CompareVersionNumbers
-        System.out.println("164 Compare Version Numbers " + CompareVersionNumbers.compareVersion("1.2", "1"));
+        //162 Find Peak Element
+        System.out.println("162 Find Peak Element " + FindPeakElement.findPeakElement(new int[]{1, 2, 3, 1}));
+
+        //165 CompareVersionNumbers
+        System.out.println("165 Compare Version Numbers " + CompareVersionNumbers.compareVersion("1.2", "1"));
+
+        //168 Excel Sheet Column Title
+        System.out.println("168 Excel Sheet Column Title " + ExcelSheetColumnTitle.convertToTitle(32));
+
+        //169 Majority Element
+        System.out.println("169 Majority Element " + MajorityElement.majorityElement(new int[]{1, 2, 3, 4, 2, 3, 4, 2, 2, 2, 2, 2}));
+
+        //171 Excel Sheet Column Number
+        System.out.println("171 Excel Sheet Column Number " + ExcelSheetColumnNumber.titleToNumber("AC"));
+
+        //189 Rotate Array
+        System.out.println("189 Rotate Array ");
+        RotateArray.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 4);
+
+        //344 Reverse String
+        System.out.println("344 Reverse String " + ReverseString.reverseString("abcde"));
+
+        //345 Reverse Vowels of a String
+        System.out.println("345 Reverse Vowels of a String " + ReverseVowelsofaString.reverseVowels("hello"));
     }
 }
