@@ -1,4 +1,4 @@
-# cc150
-my cc150  & leetcode practice
+# LeetCode
+my leetcode practice
 
-update very slow...
+slowly update...
