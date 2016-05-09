@@ -1,8 +1,19 @@
 package com.example;
 
 import com.example.pack1to100.*;
-import com.example.pack300to400.ReverseString;
-import com.example.pack300to400.ReverseVowelsofaString;
+import com.example.pack201to300.BasicCalculator2;
+import com.example.pack201to300.ContainsDuplicate;
+import com.example.pack201to300.ContainsDuplicate2;
+import com.example.pack201to300.HappyNumber;
+import com.example.pack201to300.InvertBinaryTree;
+import com.example.pack201to300.IsomorphicStrings;
+import com.example.pack201to300.MajorityElement2;
+import com.example.pack201to300.PalindromeLinkedList;
+import com.example.pack201to300.PowerOfTwo;
+import com.example.pack201to300.RectangleArea;
+import com.example.pack201to300.RemoveLinkedListElements;
+import com.example.pack301to400.ReverseString;
+import com.example.pack301to400.ReverseVowelsofaString;
 import com.example.pack101to200.*;
 
 import java.util.ArrayList;
@@ -483,6 +494,59 @@ public class LeetCode {
         //189 Rotate Array
         System.out.println("189 Rotate Array ");
         RotateArray.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 4);
+
+        //191 Number of 1 Bits
+        System.out.println("191 Number of 1 Bits " + NumberOf1Bits.hammingWeight(30));
+
+        //198 House Rob
+        System.out.println("198 House Rob " + HouseRob.rob(new int[]{1, 2, 3, 4, 5}));
+
+        //202 Happy Number
+        System.out.println("202 Happy Number " + HappyNumber.isHappy(19));
+
+        //203 Remove Linked List Elements
+        System.out.println("203 Remove Linked List Elements ");
+        RemoveLinkedListElements.removeElements(a1, 2);
+
+        //205 Isomorphic Strings
+        System.out.println("205 Isomorphic Strings " + IsomorphicStrings.isIsomorphic("abc", "efe"));
+
+        //206  Reverse Linked List
+        System.out.println("206 Reverse Linked List");
+
+        //208 Implement Trie (Prefix Tree)
+        System.out.println("208 Implement Trie (Prefix Tree) ");
+
+        //217 Contains Duplicate
+        System.out.println("217 Contains Duplicate " + ContainsDuplicate.containsDuplicate(new int[]{1, 2, 3, 4, 1}));
+
+        //219 Contains Duplicate II
+        System.out.println("219 Contains Duplicate II  " + ContainsDuplicate2.containsNearbyDuplicate(new int[]{1, 2, 1, 3, 4, 4, 5}, 3));
+
+        //223 Rectangle Area
+        System.out.println("223 Rectangle Area " + RectangleArea.computeArea(0, 0, 2, 2, 1, 1, 3, 3));
+
+        //225 Implement Stack using Queues
+        System.out.println("225 Implement Stack using Queues ");
+
+        //226 Invert Binary Tree
+        System.out.println("226 Invert Binary Tree ");
+        InvertBinaryTree.invertTree(node1);
+
+        //227 Basic Calculator II
+        System.out.println("227 Basic Calculator II " + BasicCalculator2.calculate("2*3-5_2/1"));
+
+        //229 Majority Element II
+        System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1,2,1}).toString());
+
+        //231 Power of Two
+        System.out.println("231 Power of Two " + PowerOfTwo.isPowerOfTwo(8));
+
+        //232 Implement Queue using Stacks
+        System.out.println("232 Implement Queue using Stacks");
+
+        //234 Palindrome Linked List
+        System.out.println("234 Palindrome Linked List "+ PalindromeLinkedList.isPalindrome(a1));
 
         //344 Reverse String
         System.out.println("344 Reverse String " + ReverseString.reverseString("abcde"));
