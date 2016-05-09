@@ -1,20 +1,36 @@
 package com.example;
 
 import com.example.pack1to100.*;
+import com.example.pack201to300.AddDigits;
 import com.example.pack201to300.BasicCalculator2;
+import com.example.pack201to300.BinaryTreePaths;
+import com.example.pack201to300.BullsandCows;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
+import com.example.pack201to300.FirstBadVersion;
 import com.example.pack201to300.HappyNumber;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
+import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
+import com.example.pack201to300.MissingNumber;
+import com.example.pack201to300.MoveZeroes;
+import com.example.pack201to300.NimGame;
 import com.example.pack201to300.PalindromeLinkedList;
 import com.example.pack201to300.PowerOfTwo;
+import com.example.pack201to300.ProductofArrayExceptSelf;
 import com.example.pack201to300.RectangleArea;
 import com.example.pack201to300.RemoveLinkedListElements;
+import com.example.pack201to300.UglyNumber;
+import com.example.pack201to300.ValidAnagram;
+import com.example.pack201to300.WordPattern;
+import com.example.pack301to400.CoinChange;
+import com.example.pack301to400.PowerOfFour;
+import com.example.pack301to400.PowerOfThree;
 import com.example.pack301to400.ReverseString;
 import com.example.pack301to400.ReverseVowelsofaString;
 import com.example.pack101to200.*;
+import com.example.pack301to400.TopKFrequentElements;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -537,7 +553,7 @@ public class LeetCode {
         System.out.println("227 Basic Calculator II " + BasicCalculator2.calculate("2*3-5_2/1"));
 
         //229 Majority Element II
-        System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1,2,1}).toString());
+        System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1, 2, 1}).toString());
 
         //231 Power of Two
         System.out.println("231 Power of Two " + PowerOfTwo.isPowerOfTwo(8));
@@ -546,12 +562,75 @@ public class LeetCode {
         System.out.println("232 Implement Queue using Stacks");
 
         //234 Palindrome Linked List
-        System.out.println("234 Palindrome Linked List "+ PalindromeLinkedList.isPalindrome(a1));
+        System.out.println("234 Palindrome Linked List " + PalindromeLinkedList.isPalindrome(a1));
+
+        //235 Lowest Common Ancestor of a Binary Search Tree
+        System.out.println("235 Lowest Common Ancestor of a Binary Search Tree ");
+
+        //236 Lowest Common Ancestor of a Binary Tree
+        System.out.println("236 Lowest Common Ancestor of a Binary Tree ");
+
+        //237 Delete Node in a Linked List
+        System.out.println("237 Delete Node in a Linked List ");
+
+        //238 Product of Array Except Self
+        System.out.println("238 Product of Array Except Self " + ProductofArrayExceptSelf.productExceptSelf(new int[]{1, 2, 3, 4}));
+
+        //240 Search a 2D Matrix II
+        System.out.println("240 Search a 2D Matrix II " + Search2DMatrix.searchMatrix(new int[][]{{1, 2, 4, 6}, {3, 5, 7, 8}}, 5));
+
+        //242 Valid Anagram
+        System.out.println("242 Valid Anagram " + ValidAnagram.isAnagram("abc", "cba"));
+
+        //257 Binary Tree Paths
+        System.out.println("257 Binary Tree Paths " + BinaryTreePaths.binaryTreePaths(node1).toString());
+
+        //258 Add Digits
+        System.out.println("258 Add Digits " + AddDigits.addDigits(123));
+
+        //263 Ugly Number
+        System.out.println("263 Ugly Number " + UglyNumber.isUgly(15));
+
+        //268 Missing Number
+        System.out.println("268 Missing Number " + MissingNumber.missingNumber(new int[]{1, 2, 3, 5, 6}));
+
+        //278 First Bad Version
+        System.out.println("278 First Bad Version " + FirstBadVersion.firstBadVersion(9));
+
+        //283 Move Zeroes
+        System.out.println("283 Move Zeroes ");
+
+        //290 Word Pattern
+        System.out.println("290 Word Pattern " + WordPattern.wordPattern("abbc", "what fuck fuck world"));
+
+        //292 Nim Game
+        System.out.println("292 Nim Game " + NimGame.canWinNim(15));
+
+        //299 Bulls and Cows
+        System.out.println("299 Bulls and Cows " + BullsandCows.getHint("1234", "1364"));
+
+        //300 Longest Increasing Subsequence
+        System.out.println("300 Longest Increasing Subsequence " + LongestIncreasingSubsequence.lengthOfLIS(new int[]{5, 3, 4, 8, 1, 19}));
+
+        //322 Coin Change
+        System.out.println("322 Coin Change " + CoinChange.coinChange(new int[]{1, 2, 5}, 88));
+
+        //326 Power of Three
+        System.out.println("326 Power of Three " + PowerOfThree.isPowerOfThree(27));
+
+        //328 Odd Even Linked List
+        System.out.println("328 Odd Even Linked List ");
+
+        //342 Power of Four
+        System.out.println("342 Power of Four " + PowerOfFour.isPowerOfFour(16));
 
         //344 Reverse String
         System.out.println("344 Reverse String " + ReverseString.reverseString("abcde"));
 
         //345 Reverse Vowels of a String
         System.out.println("345 Reverse Vowels of a String " + ReverseVowelsofaString.reverseVowels("hello"));
+
+        //347 Top K Frequent Elements
+        System.out.println("347 Top K Frequent Elements " + TopKFrequentElements.topKFrequent(new int[]{1, 2, 3, 4, 5, 2, 4, 6}, 2));
     }
 }
