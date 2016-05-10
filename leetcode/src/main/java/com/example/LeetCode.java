@@ -511,11 +511,17 @@ public class LeetCode {
         System.out.println("189 Rotate Array ");
         RotateArray.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 4);
 
+        //190 Reverse Bits
+        System.out.println("190 Reverse Bits" + ReverseBits.reverseBits(1));
+
         //191 Number of 1 Bits
         System.out.println("191 Number of 1 Bits " + NumberOf1Bits.hammingWeight(30));
 
         //198 House Rob
         System.out.println("198 House Rob " + HouseRob.rob(new int[]{1, 2, 3, 4, 5}));
+
+        //199 Binary Tree Right Side View
+        System.out.println("199 Binary Tree Right Side View " + BinaryTreeRightSideView.rightSideView(node1).toString());
 
         //202 Happy Number
         System.out.println("202 Happy Number " + HappyNumber.isHappy(19));
@@ -550,7 +556,7 @@ public class LeetCode {
         InvertBinaryTree.invertTree(node1);
 
         //227 Basic Calculator II
-        System.out.println("227 Basic Calculator II " + BasicCalculator2.calculate("2*3-5_2/1"));
+        System.out.println("227 Basic Calculator II " + BasicCalculator2.calculate("2*3-5-2/1"));
 
         //229 Majority Element II
         System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1, 2, 1}).toString());
