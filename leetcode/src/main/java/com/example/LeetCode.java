@@ -11,6 +11,7 @@ import com.example.pack201to300.FirstBadVersion;
 import com.example.pack201to300.HappyNumber;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
+import com.example.pack201to300.LargestNumber;
 import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
 import com.example.pack201to300.MissingNumber;
@@ -24,6 +25,7 @@ import com.example.pack201to300.RemoveLinkedListElements;
 import com.example.pack201to300.UglyNumber;
 import com.example.pack201to300.ValidAnagram;
 import com.example.pack201to300.WordPattern;
+import com.example.pack301to400.BulbSwitcher;
 import com.example.pack301to400.CoinChange;
 import com.example.pack301to400.PowerOfFour;
 import com.example.pack301to400.PowerOfThree;
@@ -507,6 +509,9 @@ public class LeetCode {
         //171 Excel Sheet Column Number
         System.out.println("171 Excel Sheet Column Number " + ExcelSheetColumnNumber.titleToNumber("AC"));
 
+        //179 Largest Number
+        System.out.println("179 Largest Number " + LargestNumber.largestNumber(new int[]{1, 2, 21, 232, 23, 32}));
+
         //189 Rotate Array
         System.out.println("189 Rotate Array ");
         RotateArray.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 4);
@@ -617,6 +622,9 @@ public class LeetCode {
 
         //300 Longest Increasing Subsequence
         System.out.println("300 Longest Increasing Subsequence " + LongestIncreasingSubsequence.lengthOfLIS(new int[]{5, 3, 4, 8, 1, 19}));
+
+        //319 Bulb Switch
+        System.out.println("319 Bulb Switch " + BulbSwitcher.bulbSwitch(10));
 
         //322 Coin Change
         System.out.println("322 Coin Change " + CoinChange.coinChange(new int[]{1, 2, 5}, 88));
