@@ -36,7 +36,9 @@ import com.example.pack301to400.TopKFrequentElements;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class LeetCode {
     public static void main(String... args) {
@@ -455,6 +457,22 @@ public class LeetCode {
         //136 Single Number
         System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
 
+        //139 Word Break
+        Set<String> set = new HashSet<String>();
+        set.add("lee");
+        set.add("leet");
+        set.add("code");
+        System.out.println("139 Word Break " + WordBreak.wordBreak("leetcode", set));
+
+        //140 Word Break II
+        HashSet<String> set1 = new HashSet<String>();
+        set1.add("cat");
+        set1.add("cats");
+        set1.add("and");
+        set1.add("sand");
+        set1.add("dog");
+        System.out.println("140 Word Break II " + WordBreak2.wordBreak("catsanddog", set1).toString());
+
         //141 Linked List Cycle
         System.out.println("141 Linked List Cycle " + LinkedListCycle.hasCycle(a));
 
@@ -623,6 +641,12 @@ public class LeetCode {
         //300 Longest Increasing Subsequence
         System.out.println("300 Longest Increasing Subsequence " + LongestIncreasingSubsequence.lengthOfLIS(new int[]{5, 3, 4, 8, 1, 19}));
 
+        //303 Range Sum Query - Immutable
+        System.out.println("303 Range Sum Query - Immutable");
+
+        //304 Range Sum Query 2D - Immutable
+        System.out.println("304 Range Sum Query 2D - Immutable");
+
         //319 Bulb Switch
         System.out.println("319 Bulb Switch " + BulbSwitcher.bulbSwitch(10));
 
@@ -646,5 +670,6 @@ public class LeetCode {
 
         //347 Top K Frequent Elements
         System.out.println("347 Top K Frequent Elements " + TopKFrequentElements.topKFrequent(new int[]{1, 2, 3, 4, 5, 2, 4, 6}, 2));
+
     }
 }
