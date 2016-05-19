@@ -11,6 +11,7 @@ import com.example.pack201to300.FirstBadVersion;
 import com.example.pack201to300.HappyNumber;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
+import com.example.pack201to300.KthLargestElementInAnArray;
 import com.example.pack201to300.LargestNumber;
 import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
@@ -330,6 +331,9 @@ public class LeetCode {
         //89 Gray Code
         System.out.println("89 Gray Code " + GrayCode.grayCode(4).toString());
 
+        //91 Decode Ways
+        System.out.println("91 Decode Ways " + DecodeWays.numDecodings("1231012012"));
+
         //92 Reverse Linked List 2
         System.out.println("92 Reverse Linked List 2");
         ReverseLinkedList2.reverseBetween(a1, 1, 3);
@@ -561,6 +565,9 @@ public class LeetCode {
 
         //208 Implement Trie (Prefix Tree)
         System.out.println("208 Implement Trie (Prefix Tree) ");
+
+        //215 Kth Largest Element in an Array
+        System.out.println("215 Kth Largest Element in an Array " + KthLargestElementInAnArray.findKthLargest(new int[]{1, 3, 4, 2, 6, 8, 4, 5, 9}, 3));
 
         //217 Contains Duplicate
         System.out.println("217 Contains Duplicate " + ContainsDuplicate.containsDuplicate(new int[]{1, 2, 3, 4, 1}));
