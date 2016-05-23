@@ -15,6 +15,7 @@ import com.example.pack201to300.KthLargestElementInAnArray;
 import com.example.pack201to300.LargestNumber;
 import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
+import com.example.pack201to300.MaximalSquare;
 import com.example.pack201to300.MissingNumber;
 import com.example.pack201to300.MoveZeroes;
 import com.example.pack201to300.NimGame;
@@ -23,6 +24,7 @@ import com.example.pack201to300.PowerOfTwo;
 import com.example.pack201to300.ProductofArrayExceptSelf;
 import com.example.pack201to300.RectangleArea;
 import com.example.pack201to300.RemoveLinkedListElements;
+import com.example.pack201to300.SingleNumber3;
 import com.example.pack201to300.UglyNumber;
 import com.example.pack201to300.ValidAnagram;
 import com.example.pack201to300.WordPattern;
@@ -575,6 +577,9 @@ public class LeetCode {
         //219 Contains Duplicate II
         System.out.println("219 Contains Duplicate II  " + ContainsDuplicate2.containsNearbyDuplicate(new int[]{1, 2, 1, 3, 4, 4, 5}, 3));
 
+        //221 Maximal Square
+        System.out.println("221 Maximal Square " + MaximalSquare.maximalSquare(new char[][]{{'1', '1', '0', '1'}, {'1', '1', '0', '1'}, {'1', '1', '1', '1'}}));
+
         //223 Rectangle Area
         System.out.println("223 Rectangle Area " + RectangleArea.computeArea(0, 0, 2, 2, 1, 1, 3, 3));
 
@@ -623,6 +628,9 @@ public class LeetCode {
 
         //258 Add Digits
         System.out.println("258 Add Digits " + AddDigits.addDigits(123));
+
+        //260 Single Number3
+        System.out.println("260 Single Number III " + SingleNumber3.singleNumber(new int[]{0, 2, 1, 1, 3, 3}));
 
         //263 Ugly Number
         System.out.println("263 Ugly Number " + UglyNumber.isUgly(15));
