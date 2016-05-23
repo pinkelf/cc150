@@ -5,6 +5,7 @@ import com.example.pack201to300.AddDigits;
 import com.example.pack201to300.BasicCalculator2;
 import com.example.pack201to300.BinaryTreePaths;
 import com.example.pack201to300.BullsandCows;
+import com.example.pack201to300.CombinationSumIII;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
 import com.example.pack201to300.FirstBadVersion;
@@ -574,6 +575,9 @@ public class LeetCode {
         //215 Kth Largest Element in an Array
         System.out.println("215 Kth Largest Element in an Array " + KthLargestElementInAnArray.findKthLargest(new int[]{1, 3, 4, 2, 6, 8, 4, 5, 9}, 3));
 
+        //216 Combination Sum III
+        System.out.println("216  Combination Sum III " + CombinationSumIII.combinationSum3(3, 9).toString());
+
         //217 Contains Duplicate
         System.out.println("217 Contains Duplicate " + ContainsDuplicate.containsDuplicate(new int[]{1, 2, 3, 4, 1}));
 
@@ -645,7 +649,7 @@ public class LeetCode {
         System.out.println("274 H-Index " + HIndex.hIndex(new int[]{100}));
 
         //275 H-Index II
-        System.out.println("275 H-Index II " + HIndex2.hIndex(new int[]{1, 2, 3, 4, 5, 6}));
+        System.out.println("275 H-Index II " + HIndex2.hIndex(new int[]{1, 2}));
 
         //278 First Bad Version
         System.out.println("278 First Bad Version " + FirstBadVersion.firstBadVersion(9));

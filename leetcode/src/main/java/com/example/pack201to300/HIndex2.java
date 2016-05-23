@@ -11,9 +11,19 @@ public class HIndex2 {
      * @return
      */
     public static int hIndex(int[] citations) {
-        for (int i = 0; i < citations.length; i++) {
-            if (citations[i] >= citations.length - i) {
-                return citations.length - i;
+        int low = 0;
+        int high = citations.length - 1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (citations[mid] >= citations.length - mid) {
+                if (mid > 0 && citations[mid - 1] >= citations.length - mid + 1) {
+                    high = mid;
+                } else {
+                    return citations.length - mid;
+                }
+            } else {
+                low = mid + 1;
             }
         }
         return 0;
