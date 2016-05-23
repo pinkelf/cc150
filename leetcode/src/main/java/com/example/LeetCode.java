@@ -8,6 +8,8 @@ import com.example.pack201to300.BullsandCows;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
 import com.example.pack201to300.FirstBadVersion;
+import com.example.pack201to300.HIndex;
+import com.example.pack201to300.HIndex2;
 import com.example.pack201to300.HappyNumber;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
@@ -30,6 +32,7 @@ import com.example.pack201to300.ValidAnagram;
 import com.example.pack201to300.WordPattern;
 import com.example.pack301to400.BulbSwitcher;
 import com.example.pack301to400.CoinChange;
+import com.example.pack301to400.IntersectionofTwoArrays2;
 import com.example.pack301to400.PowerOfFour;
 import com.example.pack301to400.PowerOfThree;
 import com.example.pack301to400.ReverseString;
@@ -638,6 +641,12 @@ public class LeetCode {
         //268 Missing Number
         System.out.println("268 Missing Number " + MissingNumber.missingNumber(new int[]{1, 2, 3, 5, 6}));
 
+        //274 H-Index
+        System.out.println("274 H-Index " + HIndex.hIndex(new int[]{100}));
+
+        //275 H-Index II
+        System.out.println("275 H-Index II " + HIndex2.hIndex(new int[]{1, 2, 3, 4, 5, 6}));
+
         //278 First Bad Version
         System.out.println("278 First Bad Version " + FirstBadVersion.firstBadVersion(9));
 
@@ -685,6 +694,9 @@ public class LeetCode {
 
         //347 Top K Frequent Elements
         System.out.println("347 Top K Frequent Elements " + TopKFrequentElements.topKFrequent(new int[]{1, 2, 3, 4, 5, 2, 4, 6}, 2));
+
+        //350 Intersection of Two Arrays II
+        System.out.println("350 Intersection of Two Arrays II " + IntersectionofTwoArrays2.intersect(new int[]{1, 2, 3, 1, 2}, new int[]{1, 2, 1}));
 
     }
 }
