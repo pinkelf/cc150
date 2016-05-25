@@ -4,6 +4,7 @@ import com.example.pack1to100.*;
 import com.example.pack201to300.AddDigits;
 import com.example.pack201to300.BasicCalculator2;
 import com.example.pack201to300.BinaryTreePaths;
+import com.example.pack201to300.BitwiseANDofNumbersRange;
 import com.example.pack201to300.BullsandCows;
 import com.example.pack201to300.CombinationSumIII;
 import com.example.pack201to300.ContainsDuplicate;
@@ -15,6 +16,7 @@ import com.example.pack201to300.HappyNumber;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
 import com.example.pack201to300.KthLargestElementInAnArray;
+import com.example.pack201to300.KthSmallestElementinaBST;
 import com.example.pack201to300.LargestNumber;
 import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
@@ -461,6 +463,10 @@ public class LeetCode {
         //129 Sum Root to Leaf Numbers
         System.out.println("129 Sum Root to Leaf Numbers " + SumRoottoLeafNumbers.sumNumbers(node1));
 
+        //130 Surround Regions
+        System.out.println("130 Surrounded Regions ");
+        SurroundedRegions.solve(new char[][]{{'O'}});
+
         //134 Gas Station
         System.out.println("134 Gas Station " + GasStation.canCompleteCircuit(new int[]{4}, new int[]{5}));
 
@@ -556,6 +562,12 @@ public class LeetCode {
         //199 Binary Tree Right Side View
         System.out.println("199 Binary Tree Right Side View " + BinaryTreeRightSideView.rightSideView(node1).toString());
 
+        //200 Number of Islands
+        System.out.println("200 Number of Islands " + NumberOfIslands.numIslands(new char[][]{{'1', '0'}, {'0', '1'}}));
+
+        //201 Bitwise AND of Numbers Range
+        System.out.println("201 Bitwise AND of Numbers Range " + BitwiseANDofNumbersRange.rangeBitwiseAnd(5, 7));
+
         //202 Happy Number
         System.out.println("202 Happy Number " + HappyNumber.isHappy(19));
 
@@ -602,6 +614,12 @@ public class LeetCode {
 
         //229 Majority Element II
         System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1, 2, 1}).toString());
+
+        //230 Kth Smallest Element in a BST
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n2 = new TreeNode(2);
+        n2.left = n1;
+        System.out.println("230 Kth Smallest Element in a BST " + KthSmallestElementinaBST.kthSmallest(n2, 1));
 
         //231 Power of Two
         System.out.println("231 Power of Two " + PowerOfTwo.isPowerOfTwo(8));
