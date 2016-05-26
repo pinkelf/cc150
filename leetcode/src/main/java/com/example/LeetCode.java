@@ -10,6 +10,7 @@ import com.example.pack201to300.CombinationSumIII;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
 import com.example.pack201to300.FirstBadVersion;
+import com.example.pack201to300.GameOfLife;
 import com.example.pack201to300.HIndex;
 import com.example.pack201to300.HIndex2;
 import com.example.pack201to300.HappyNumber;
@@ -674,6 +675,10 @@ public class LeetCode {
 
         //283 Move Zeroes
         System.out.println("283 Move Zeroes ");
+
+        //289 Game of Life
+        System.out.println("289 Game of Life ");
+        GameOfLife.gameOfLife(new int[][]{{1}});
 
         //290 Word Pattern
         System.out.println("290 Word Pattern " + WordPattern.wordPattern("abbc", "what fuck fuck world"));

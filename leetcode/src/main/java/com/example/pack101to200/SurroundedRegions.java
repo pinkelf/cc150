@@ -21,28 +21,22 @@ public class SurroundedRegions {
         if (board.length == 0) {
             return;
         }
-        //top
+        //row
         for (int j = 0; j < board[0].length; j++) {
             if (board[0][j] == 'O') {
                 mark(board, 0, j);
             }
-        }
-        //right
-        for (int i = 0; i < board.length - 1; i++) {
-            if (board[i][board[0].length - 1] == 'O') {
-                mark(board, i, board[0].length - 1);
-            }
-        }
-        //bottom
-        for (int j = board[0].length - 1; j > 0; j--) {
             if (board[board.length - 1][j] == 'O') {
                 mark(board, board.length - 1, j);
             }
         }
-        //left
-        for (int i = board.length - 1; i > 0; i--) {
+        //column
+        for (int i = 0; i < board.length; i++) {
             if (board[i][0] == 'O') {
                 mark(board, i, 0);
+            }
+            if (board[i][board[0].length - 1] == 'O') {
+                mark(board, i, board[0].length - 1);
             }
         }
 
