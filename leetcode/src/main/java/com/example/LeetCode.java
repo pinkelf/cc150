@@ -369,6 +369,12 @@ public class LeetCode {
         //97 isInterleave
         System.out.println("97 Interleaving String " + IntervalString.isInterleave("a", "b", "ab"));
 
+        //98 Validate Binary Search Tree
+        TreeNode node98 = new TreeNode(1);
+        TreeNode node99 = new TreeNode(1);
+        node98.right = node99;
+        System.out.println("98 Validate Binary Search Tree " + ValidateBinarySearchTree.isValidBST(node98));
+
         //100 Same Tree
         System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
 
@@ -473,6 +479,9 @@ public class LeetCode {
 
         //134 Gas Station
         System.out.println("134 Gas Station " + GasStation.canCompleteCircuit(new int[]{4}, new int[]{5}));
+
+        //135 Candy
+        System.out.println("135 Candy " + Candy.candy(new int[]{1, 2, 3, 4, 5, 3, 1, 2, 6, 4, 1}));
 
         //136 Single Number
         System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
