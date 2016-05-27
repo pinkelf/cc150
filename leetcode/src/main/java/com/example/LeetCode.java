@@ -26,6 +26,7 @@ import com.example.pack201to300.MissingNumber;
 import com.example.pack201to300.MoveZeroes;
 import com.example.pack201to300.NimGame;
 import com.example.pack201to300.PalindromeLinkedList;
+import com.example.pack201to300.PerfectSquare;
 import com.example.pack201to300.PowerOfTwo;
 import com.example.pack201to300.ProductofArrayExceptSelf;
 import com.example.pack201to300.RectangleArea;
@@ -49,6 +50,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import sun.misc.Perf;
 
 public class LeetCode {
     public static void main(String... args) {
@@ -547,6 +550,9 @@ public class LeetCode {
         //179 Largest Number
         System.out.println("179 Largest Number " + LargestNumber.largestNumber(new int[]{1, 2, 21, 232, 23, 32}));
 
+        //187 Repeated DNA Sequences
+        System.out.println("187 Repeated DNA Sequences " + ReapeatedDNASequences.findRepeatedDnaSequences("AAAAAAAAAAA"));
+
         //189 Rotate Array
         System.out.println("189 Rotate Array ");
         RotateArray.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 4);
@@ -672,6 +678,9 @@ public class LeetCode {
 
         //278 First Bad Version
         System.out.println("278 First Bad Version " + FirstBadVersion.firstBadVersion(9));
+
+        //279 Perfect Squares
+        System.out.println("279 Perfect Squares " + PerfectSquare.numSquares(21));
 
         //283 Move Zeroes
         System.out.println("283 Move Zeroes ");
