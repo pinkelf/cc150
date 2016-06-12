@@ -44,6 +44,7 @@ import com.example.pack301to400.ReverseString;
 import com.example.pack301to400.ReverseVowelsofaString;
 import com.example.pack101to200.*;
 import com.example.pack301to400.TopKFrequentElements;
+import com.example.pack301to400.Twitter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -728,6 +729,9 @@ public class LeetCode {
         //328 Odd Even Linked List
         System.out.println("328 Odd Even Linked List ");
 
+        //341 Flatten Nested List Iterator
+        System.out.println("341 Flatten Nested List Iterator");
+
         //342 Power of Four
         System.out.println("342 Power of Four " + PowerOfFour.isPowerOfFour(16));
 
@@ -743,5 +747,8 @@ public class LeetCode {
         //350 Intersection of Two Arrays II
         System.out.println("350 Intersection of Two Arrays II " + IntersectionofTwoArrays2.intersect(new int[]{1, 2, 3, 1, 2}, new int[]{1, 2, 1}));
 
+        //355 Twitter
+        System.out.println("355 Design Twitter");
+        Twitter twitter = new Twitter();
     }
 }
