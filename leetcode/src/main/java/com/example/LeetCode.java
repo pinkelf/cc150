@@ -9,6 +9,7 @@ import com.example.pack201to300.BullsandCows;
 import com.example.pack201to300.CombinationSumIII;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
+import com.example.pack201to300.FindtheDuplicatedNumber;
 import com.example.pack201to300.FirstBadVersion;
 import com.example.pack201to300.GameOfLife;
 import com.example.pack201to300.HIndex;
@@ -703,6 +704,12 @@ public class LeetCode {
 
         //283 Move Zeroes
         System.out.println("283 Move Zeroes ");
+
+        //284 Peeking Iterator
+        System.out.println("284 Peeking Iterator");
+
+        //287 Find the Duplicated Number
+        System.out.println("287 Find the Duplicated Number " + FindtheDuplicatedNumber.findDuplicate(new int[]{1, 2, 3, 4, 2}));
 
         //289 Game of Life
         System.out.println("289 Game of Life ");
