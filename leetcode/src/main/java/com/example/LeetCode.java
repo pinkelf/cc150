@@ -376,6 +376,9 @@ public class LeetCode {
         node98.right = node99;
         System.out.println("98 Validate Binary Search Tree " + ValidateBinarySearchTree.isValidBST(node98));
 
+        //99 Recover Binary Search Tree
+        System.out.println("99 Recover Binary Search Tree");
+
         //100 Same Tree
         System.out.println("100 Same Tree " + SameTree.isSameTree(node1, node1));
 
@@ -477,6 +480,12 @@ public class LeetCode {
         //130 Surround Regions
         System.out.println("130 Surrounded Regions ");
         SurroundedRegions.solve(new char[][]{{'O'}});
+
+        //131 Palindrome Partitioning
+        System.out.println("131 Palindrome Partitioning " + PalindromePartitioning.partition("aab"));
+
+        //132 Palindrome Partitioning2
+        System.out.println("131 Palindrome Partitioning2 " + PalindromePartitioning2.minCut("aabadadad"));
 
         //134 Gas Station
         System.out.println("134 Gas Station " + GasStation.canCompleteCircuit(new int[]{4}, new int[]{5}));
