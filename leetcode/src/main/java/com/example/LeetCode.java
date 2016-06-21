@@ -23,6 +23,7 @@ import com.example.pack201to300.LargestNumber;
 import com.example.pack201to300.LongestIncreasingSubsequence;
 import com.example.pack201to300.MajorityElement2;
 import com.example.pack201to300.MaximalSquare;
+import com.example.pack201to300.MinimumSizeSubarraySum;
 import com.example.pack201to300.MissingNumber;
 import com.example.pack201to300.MoveZeroes;
 import com.example.pack201to300.NimGame;
@@ -289,6 +290,9 @@ public class LeetCode {
         //70 Climbing Stairs
         System.out.println("70 Climbing Stairs " + ClimbingStairs.climbStairs(9));
 
+        //71 Simplify Path
+        System.out.println("71 Simplify Path " + SimplifyPath.simplifyPath("/.."));
+
         //72 Edit Distance
         System.out.println("72 Edit Distance " + EditDistance.minDistance("abcde", "adf"));
 
@@ -344,6 +348,9 @@ public class LeetCode {
 
         //89 Gray Code
         System.out.println("89 Gray Code " + GrayCode.grayCode(4).toString());
+
+        //90 Subsets2
+        System.out.println("90 SubsetsII " + Subsets2.subsetsWithDup(new int[]{1, 2, 2,}));
 
         //91 Decode Ways
         System.out.println("91 Decode Ways " + DecodeWays.numDecodings("1231012012"));
@@ -611,6 +618,9 @@ public class LeetCode {
         //208 Implement Trie (Prefix Tree)
         System.out.println("208 Implement Trie (Prefix Tree) ");
 
+        //209 Minimum Size Subarray Sum
+        System.out.println("209 Minimum Size Subarray Sum " + MinimumSizeSubarraySum.minSubArrayLen(10, new int[]{1, 3, 6, 5, 3, 2}));
+
         //215 Kth Largest Element in an Array
         System.out.println("215 Kth Largest Element in an Array " + KthLargestElementInAnArray.findKthLargest(new int[]{1, 3, 4, 2, 6, 8, 4, 5, 9}, 3));
 
@@ -720,6 +730,9 @@ public class LeetCode {
 
         //292 Nim Game
         System.out.println("292 Nim Game " + NimGame.canWinNim(15));
+
+        //295 Find Median from Data Stream
+        System.out.println("295 Find Median from Data Stream ");
 
         //299 Bulls and Cows
         System.out.println("299 Bulls and Cows " + BullsandCows.getHint("1234", "1364"));
