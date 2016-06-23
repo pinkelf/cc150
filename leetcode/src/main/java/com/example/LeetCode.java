@@ -372,6 +372,9 @@ public class LeetCode {
         node4.left = node3;
         System.out.println("94 Binary Tree Inorder Traversal " + BinaryTreeInorderTraversal.inorderTraversal(node1).toString());
 
+        //95 UniqueBinarySearchTrees2
+        System.out.println("95 Unique Binary Search Trees 2 " + UniqueBinarySearchTreesII.generateTrees(3));
+
         //96 UniqueBinarySearchTrees
         System.out.println("96 Unique Binary Search Trees " + UniqueBinarySearchTrees.numTrees(5));
 
@@ -534,7 +537,10 @@ public class LeetCode {
         System.out.println("144 Binary Tree Preorder Traversal " + BinaryTreePreorderTraversal.preorderTraversal(node1).toString());
 
         //145 Binary Tree Postorder Traversal
-        System.out.println("144 Binary Tree Postorder Traversal " + BinaryTreePostorderTraversal.postorderTraversal(node1).toString());
+        System.out.println("145 Binary Tree Postorder Traversal " + BinaryTreePostorderTraversal.postorderTraversal(node1).toString());
+
+        //146 LRU Cache
+        System.out.println("146 LRU Cache");
 
         //147 Insertion Sort List
         System.out.println("147 Insertion Sort List ");
