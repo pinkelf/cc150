@@ -34,6 +34,7 @@ import com.example.pack201to300.ProductofArrayExceptSelf;
 import com.example.pack201to300.RectangleArea;
 import com.example.pack201to300.RemoveLinkedListElements;
 import com.example.pack201to300.SingleNumber3;
+import com.example.pack201to300.SummaryRanges;
 import com.example.pack201to300.UglyNumber;
 import com.example.pack201to300.ValidAnagram;
 import com.example.pack201to300.WordPattern;
@@ -47,6 +48,7 @@ import com.example.pack301to400.ReverseVowelsofaString;
 import com.example.pack101to200.*;
 import com.example.pack301to400.TopKFrequentElements;
 import com.example.pack301to400.Twitter;
+import com.example.pack301to400.ValidPerfectSquare;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -507,6 +509,9 @@ public class LeetCode {
         //136 Single Number
         System.out.println("136 Single Number " + SingleNumber.singleNumber(new int[]{1, 2, 3, 2, 3, 1, 5, 6, 5}));
 
+        //138 Copy List with Random Pointer
+        System.out.println("138 Copy List with Random Pointer");
+
         //139 Word Break
         Set<String> set = new HashSet<String>();
         set.add("lee");
@@ -642,6 +647,9 @@ public class LeetCode {
         //221 Maximal Square
         System.out.println("221 Maximal Square " + MaximalSquare.maximalSquare(new char[][]{{'1', '1', '0', '1'}, {'1', '1', '0', '1'}, {'1', '1', '1', '1'}}));
 
+        //222 Count Complete Tree Nodes
+        System.out.println("222 Count Complete Tree Nodes");
+
         //223 Rectangle Area
         System.out.println("223 Rectangle Area " + RectangleArea.computeArea(0, 0, 2, 2, 1, 1, 3, 3));
 
@@ -654,6 +662,9 @@ public class LeetCode {
 
         //227 Basic Calculator II
         System.out.println("227 Basic Calculator II " + BasicCalculator2.calculate("2*3-5-2/1"));
+
+        //228 Summary Ranges
+        System.out.println("228 Summary Ranges " + SummaryRanges.summaryRanges(new int[]{1, 2, 3, 5, 7}));
 
         //229 Majority Element II
         System.out.println("229 Majority Element II " + MajorityElement2.majorityElement(new int[]{1, 2, 1}).toString());
@@ -785,5 +796,8 @@ public class LeetCode {
         //355 Twitter
         System.out.println("355 Design Twitter");
         Twitter twitter = new Twitter();
+
+        //367 Valid Perfect Square
+        System.out.println("367 Valid Perfect Square " + ValidPerfectSquare.isPerfectSquare(145789));
     }
 }
