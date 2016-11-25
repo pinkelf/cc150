@@ -49,6 +49,9 @@ import com.example.pack101to200.*;
 import com.example.pack301to400.TopKFrequentElements;
 import com.example.pack301to400.Twitter;
 import com.example.pack301to400.ValidPerfectSquare;
+import com.example.package401to500.AssignCookies;
+import com.example.package401to500.IslandPerimeter;
+import com.example.package401to500.MinimumMovestoEqualArrayElements;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -799,5 +802,17 @@ public class LeetCode {
 
         //367 Valid Perfect Square
         System.out.println("367 Valid Perfect Square " + ValidPerfectSquare.isPerfectSquare(145789));
+
+        //453
+        MinimumMovestoEqualArrayElements.minMoves(new int[]{1, 2, 3});
+
+        //455 Assign Cookies
+        System.out.println("455 Assign Cookies " + AssignCookies.findContentChildren(new int[]{1, 2, 3}, new int[]{1, 2}));
+
+        //463 Island Perimeter
+        System.out.println("463 Island Perimeter " + IslandPerimeter.islandPerimeter(new int[][]{{1, 1}, {1, 1}}));
+
     }
+
+
 }
