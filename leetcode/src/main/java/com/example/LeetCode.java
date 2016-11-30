@@ -50,6 +50,7 @@ import com.example.pack301to400.TopKFrequentElements;
 import com.example.pack301to400.Twitter;
 import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.AssignCookies;
+import com.example.package401to500.FourSumII;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
@@ -807,6 +808,9 @@ public class LeetCode {
 
         //453
         MinimumMovestoEqualArrayElements.minMoves(new int[]{1, 2, 3});
+
+        //454 4Sum II
+        System.out.println("454 4Sum II " + FourSumII.fourSumCount(new int[]{1, 2}, new int[]{-2, -1}, new int[]{-1, 2}, new int[]{0, 2}));
 
         //455 Assign Cookies
         System.out.println("455 Assign Cookies " + AssignCookies.findContentChildren(new int[]{1, 2, 3}, new int[]{1, 2}));
