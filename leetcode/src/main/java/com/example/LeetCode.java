@@ -52,6 +52,7 @@ import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.AssignCookies;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
+import com.example.package401to500.RepeatedSubStringPattern;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -808,6 +809,9 @@ public class LeetCode {
 
         //455 Assign Cookies
         System.out.println("455 Assign Cookies " + AssignCookies.findContentChildren(new int[]{1, 2, 3}, new int[]{1, 2}));
+
+        //459 Repeated SubString Pattern
+        System.out.println("459 Repeated SubString Pattern " + RepeatedSubStringPattern.repeatedSubstringPattern("bb"));
 
         //463 Island Perimeter
         System.out.println("463 Island Perimeter " + IslandPerimeter.islandPerimeter(new int[][]{{1, 1}, {1, 1}}));
