@@ -52,6 +52,7 @@ import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.AssignCookies;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
+import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
 import com.example.package401to500.RepeatedSubStringPattern;
 
 import java.util.ArrayList;
@@ -812,6 +813,9 @@ public class LeetCode {
 
         //459 Repeated SubString Pattern
         System.out.println("459 Repeated SubString Pattern " + RepeatedSubStringPattern.repeatedSubstringPattern("bb"));
+
+        //462 Minimum Moves to Equal Array Elements II
+        System.out.println("462 Minimum Moves to Equal Array Elements II " + MinimumMovestoEqualArrayElementsII.minMoves2(new int[]{1, 2, 3, 4, 5, 6}));
 
         //463 Island Perimeter
         System.out.println("463 Island Perimeter " + IslandPerimeter.islandPerimeter(new int[][]{{1, 1}, {1, 1}}));
