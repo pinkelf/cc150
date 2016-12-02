@@ -41,6 +41,7 @@ import com.example.pack201to300.WordPattern;
 import com.example.pack301to400.BulbSwitcher;
 import com.example.pack301to400.CoinChange;
 import com.example.pack301to400.IntersectionofTwoArrays2;
+import com.example.pack301to400.MaximumProductofWordLengths;
 import com.example.pack301to400.PowerOfFour;
 import com.example.pack301to400.PowerOfThree;
 import com.example.pack301to400.ReverseString;
@@ -54,6 +55,8 @@ import com.example.package401to500.FourSumII;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
+import com.example.package401to500.PathSumIII;
+import com.example.package401to500.ReconstructOriginalDigitsfromEnglish;
 import com.example.package401to500.RepeatedSubStringPattern;
 
 import java.util.ArrayList;
@@ -769,6 +772,9 @@ public class LeetCode {
         //304 Range Sum Query 2D - Immutable
         System.out.println("304 Range Sum Query 2D - Immutable");
 
+        //318 Maximum Product of Word Lengths
+        System.out.println("318 Maximum Product of Word Lengths " + MaximumProductofWordLengths.maxProduct(new String[]{"abc", "cd", "ab"}));
+
         //319 Bulb Switch
         System.out.println("319 Bulb Switch " + BulbSwitcher.bulbSwitch(10));
 
@@ -805,6 +811,12 @@ public class LeetCode {
 
         //367 Valid Perfect Square
         System.out.println("367 Valid Perfect Square " + ValidPerfectSquare.isPerfectSquare(145789));
+
+        //423 Reconstruct Original Digits from English
+        System.out.println("423 Reconstruct Original Digits from English " + ReconstructOriginalDigitsfromEnglish.originalDigits("noehtrwtoee"));
+
+        //437 Path Sum III
+        System.out.println("437 Path Sum III " + PathSumIII.pathSum(new TreeNode(1), 1));
 
         //453
         MinimumMovestoEqualArrayElements.minMoves(new int[]{1, 2, 3});
