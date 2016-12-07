@@ -40,6 +40,7 @@ import com.example.pack201to300.ValidAnagram;
 import com.example.pack201to300.WordPattern;
 import com.example.pack301to400.BulbSwitcher;
 import com.example.pack301to400.CoinChange;
+import com.example.pack301to400.HouseRobberIII;
 import com.example.pack301to400.IntersectionofTwoArrays2;
 import com.example.pack301to400.MaximumProductofWordLengths;
 import com.example.pack301to400.PowerOfFour;
@@ -50,20 +51,26 @@ import com.example.pack101to200.*;
 import com.example.pack301to400.TopKFrequentElements;
 import com.example.pack301to400.Twitter;
 import com.example.pack301to400.ValidPerfectSquare;
+import com.example.package401to500.ArrangingCoins;
 import com.example.package401to500.AssignCookies;
 import com.example.package401to500.FourSumII;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
+import com.example.package401to500.NonOverlappingIntervals;
 import com.example.package401to500.PathSumIII;
 import com.example.package401to500.ReconstructOriginalDigitsfromEnglish;
 import com.example.package401to500.RepeatedSubStringPattern;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 import sun.misc.Perf;
 
@@ -787,6 +794,9 @@ public class LeetCode {
         //328 Odd Even Linked List
         System.out.println("328 Odd Even Linked List ");
 
+        //337 House Robber III
+        System.out.println("337 House Robber III " + HouseRobberIII.rob(new TreeNode(1)));
+
         //341 Flatten Nested List Iterator
         System.out.println("341 Flatten Nested List Iterator");
 
@@ -815,8 +825,14 @@ public class LeetCode {
         //423 Reconstruct Original Digits from English
         System.out.println("423 Reconstruct Original Digits from English " + ReconstructOriginalDigitsfromEnglish.originalDigits("noehtrwtoee"));
 
+        //435 Non-overlapping Intervals
+        System.out.println("435 Non-overlapping Intervals " + NonOverlappingIntervals.eraseOverlapIntervals(new Interval[]{new Interval(1, 2), new Interval(2, 3), new Interval(1, 3)}));
+
         //437 Path Sum III
         System.out.println("437 Path Sum III " + PathSumIII.pathSum(new TreeNode(1), 1));
+
+        //441 Arranging Coins
+        System.out.println("441 Arranging Coins " + ArrangingCoins.arrangeCoins(8));
 
         //453
         MinimumMovestoEqualArrayElements.minMoves(new int[]{1, 2, 3});
@@ -835,8 +851,7 @@ public class LeetCode {
 
         //463 Island Perimeter
         System.out.println("463 Island Perimeter " + IslandPerimeter.islandPerimeter(new int[][]{{1, 1}, {1, 1}}));
-
     }
-
-
 }
+
+

@@ -7,7 +7,7 @@ public class Interval {
     public int start;
     public int end;
 
-    Interval() {
+    public Interval() {
         start = 0;
         end = 0;
     }
