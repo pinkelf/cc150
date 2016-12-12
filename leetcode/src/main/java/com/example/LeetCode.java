@@ -9,12 +9,14 @@ import com.example.pack201to300.BullsandCows;
 import com.example.pack201to300.CombinationSumIII;
 import com.example.pack201to300.ContainsDuplicate;
 import com.example.pack201to300.ContainsDuplicate2;
+import com.example.pack201to300.CourseSchedule;
 import com.example.pack201to300.FindtheDuplicatedNumber;
 import com.example.pack201to300.FirstBadVersion;
 import com.example.pack201to300.GameOfLife;
 import com.example.pack201to300.HIndex;
 import com.example.pack201to300.HIndex2;
 import com.example.pack201to300.HappyNumber;
+import com.example.pack201to300.HouseRobberII;
 import com.example.pack201to300.InvertBinaryTree;
 import com.example.pack201to300.IsomorphicStrings;
 import com.example.pack201to300.KthLargestElementInAnArray;
@@ -54,10 +56,12 @@ import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.ArrangingCoins;
 import com.example.package401to500.AssignCookies;
 import com.example.package401to500.FourSumII;
+import com.example.package401to500.FrogJump;
 import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
 import com.example.package401to500.NonOverlappingIntervals;
+import com.example.package401to500.NumberofSegmentsinaString;
 import com.example.package401to500.PathSumIII;
 import com.example.package401to500.ReconstructOriginalDigitsfromEnglish;
 import com.example.package401to500.RepeatedSubStringPattern;
@@ -642,11 +646,17 @@ public class LeetCode {
         //206  Reverse Linked List
         System.out.println("206 Reverse Linked List");
 
+        //207 Course Schedule
+        System.out.println("207 Course Schedule " + CourseSchedule.canFinish(2, new int[][]{{1, 0}}));
+
         //208 Implement Trie (Prefix Tree)
         System.out.println("208 Implement Trie (Prefix Tree) ");
 
         //209 Minimum Size Subarray Sum
         System.out.println("209 Minimum Size Subarray Sum " + MinimumSizeSubarraySum.minSubArrayLen(10, new int[]{1, 3, 6, 5, 3, 2}));
+
+        //213 House Robber II
+        System.out.println("213 House Robber II " + HouseRobberII.rob(new int[]{1, 2, 3, 4, 8, 7, 2, 3, 9, 1}));
 
         //215 Kth Largest Element in an Array
         System.out.println("215 Kth Largest Element in an Array " + KthLargestElementInAnArray.findKthLargest(new int[]{1, 3, 4, 2, 6, 8, 4, 5, 9}, 3));
@@ -822,8 +832,14 @@ public class LeetCode {
         //367 Valid Perfect Square
         System.out.println("367 Valid Perfect Square " + ValidPerfectSquare.isPerfectSquare(145789));
 
+        //403 Frog Jump
+        FrogJump.canCross(new int[]{0, 1, 3, 5, 6, 8, 12, 17});
+
         //423 Reconstruct Original Digits from English
         System.out.println("423 Reconstruct Original Digits from English " + ReconstructOriginalDigitsfromEnglish.originalDigits("noehtrwtoee"));
+
+        //434 Number of Segments in a String
+        System.out.println("434 Number of Segments in a String " + NumberofSegmentsinaString.countSegments("Hello, my name is John"));
 
         //435 Non-overlapping Intervals
         System.out.println("435 Non-overlapping Intervals " + NonOverlappingIntervals.eraseOverlapIntervals(new Interval[]{new Interval(1, 2), new Interval(2, 3), new Interval(1, 3)}));
