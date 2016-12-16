@@ -55,6 +55,7 @@ import com.example.pack301to400.Twitter;
 import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.ArrangingCoins;
 import com.example.package401to500.AssignCookies;
+import com.example.package401to500.FindAllAnagramsinaString;
 import com.example.package401to500.FourSumII;
 import com.example.package401to500.FrogJump;
 import com.example.package401to500.IslandPerimeter;
@@ -62,6 +63,7 @@ import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
 import com.example.package401to500.NonOverlappingIntervals;
 import com.example.package401to500.NumberofSegmentsinaString;
+import com.example.package401to500.OnesandZeroes;
 import com.example.package401to500.PathSumIII;
 import com.example.package401to500.ReconstructOriginalDigitsfromEnglish;
 import com.example.package401to500.RepeatedSubStringPattern;
@@ -847,6 +849,9 @@ public class LeetCode {
         //437 Path Sum III
         System.out.println("437 Path Sum III " + PathSumIII.pathSum(new TreeNode(1), 1));
 
+        //438 Find All Anagrams in a String
+        System.out.println("438 Find All Anagrams in a String " + FindAllAnagramsinaString.findAnagrams("abab", "ab"));
+
         //441 Arranging Coins
         System.out.println("441 Arranging Coins " + ArrangingCoins.arrangeCoins(8));
 
@@ -867,6 +872,9 @@ public class LeetCode {
 
         //463 Island Perimeter
         System.out.println("463 Island Perimeter " + IslandPerimeter.islandPerimeter(new int[][]{{1, 1}, {1, 1}}));
+
+        //474 Ones and Zeroes
+        System.out.println("474 Ones and Zeroes " + OnesandZeroes.findMaxForm(new String[]{"01", "1", "0"}, 1, 1));
     }
 }
 
