@@ -55,6 +55,7 @@ import com.example.pack301to400.Twitter;
 import com.example.pack301to400.ValidPerfectSquare;
 import com.example.package401to500.ArrangingCoins;
 import com.example.package401to500.AssignCookies;
+import com.example.package401to500.ConstructtheRectangle;
 import com.example.package401to500.FindAllAnagramsinaString;
 import com.example.package401to500.FourSumII;
 import com.example.package401to500.FrogJump;
@@ -62,11 +63,13 @@ import com.example.package401to500.IslandPerimeter;
 import com.example.package401to500.MinimumMovestoEqualArrayElements;
 import com.example.package401to500.MinimumMovestoEqualArrayElementsII;
 import com.example.package401to500.NonOverlappingIntervals;
+import com.example.package401to500.NumberComplement;
 import com.example.package401to500.NumberofSegmentsinaString;
 import com.example.package401to500.OnesandZeroes;
 import com.example.package401to500.PathSumIII;
 import com.example.package401to500.ReconstructOriginalDigitsfromEnglish;
 import com.example.package401to500.RepeatedSubStringPattern;
+import com.example.package401to500.SortCharacterByFrequency;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -855,6 +858,9 @@ public class LeetCode {
         //441 Arranging Coins
         System.out.println("441 Arranging Coins " + ArrangingCoins.arrangeCoins(8));
 
+        //451 Sort Characters By Frequency
+        System.out.println("451 Sort Characters By Frequency " + SortCharacterByFrequency.frequencySort("tree"));
+
         //453
         MinimumMovestoEqualArrayElements.minMoves(new int[]{1, 2, 3});
 
@@ -875,6 +881,12 @@ public class LeetCode {
 
         //474 Ones and Zeroes
         System.out.println("474 Ones and Zeroes " + OnesandZeroes.findMaxForm(new String[]{"01", "1", "0"}, 1, 1));
+
+        //476 Number Complement
+        System.out.println("476 Number Complement " + NumberComplement.findComplement(5));
+
+        //492 Construct the Rectangle
+        System.out.println("492 Construct the Rectangle " + ConstructtheRectangle.constructRectangle(15));
     }
 }
 
