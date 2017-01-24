@@ -57,6 +57,8 @@ import com.example.package401to500.ArrangingCoins;
 import com.example.package401to500.AssignCookies;
 import com.example.package401to500.ConstructtheRectangle;
 import com.example.package401to500.FindAllAnagramsinaString;
+import com.example.package401to500.FindAllDuplicatesinanArray;
+import com.example.package401to500.FindAllNumbersDisappearedinanArray;
 import com.example.package401to500.FourSumII;
 import com.example.package401to500.FrogJump;
 import com.example.package401to500.IslandPerimeter;
@@ -857,6 +859,12 @@ public class LeetCode {
 
         //441 Arranging Coins
         System.out.println("441 Arranging Coins " + ArrangingCoins.arrangeCoins(8));
+
+        //442 Find All Duplicates in an Array
+        System.out.println("442 Find All Duplicates in an Array " + FindAllDuplicatesinanArray.findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
+
+        //448 Find All Numbers Disappeared in an Array
+        System.out.println("448 Find All Numbers Disappeared in an Array " + FindAllNumbersDisappearedinanArray.findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
 
         //451 Sort Characters By Frequency
         System.out.println("451 Sort Characters By Frequency " + SortCharacterByFrequency.frequencySort("tree"));
