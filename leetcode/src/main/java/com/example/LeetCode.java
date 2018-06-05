@@ -1,5 +1,9 @@
 package com.example;
 
+import com.example.p501to600.BrickWall;
+import com.example.p701to800.Partition763;
+import com.example.p801to900.PruneTree;
+import com.example.p801to900.SubDomainVisits;
 import com.example.pack1to100.*;
 import com.example.pack201to300.AddDigits;
 import com.example.pack201to300.BasicCalculator2;
@@ -895,6 +899,30 @@ public class LeetCode {
 
         //492 Construct the Rectangle
         System.out.println("492 Construct the Rectangle " + ConstructtheRectangle.constructRectangle(15));
+
+        //545 Brick Walls
+        List<List<Integer>> listo = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+
+        List<Integer> list5 = new ArrayList<>();
+        list5.add(1);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(1);
+
+        listo.add(list1);
+        listo.add(list5);
+        listo.add(list3);
+
+        BrickWall.leastBricks(listo);
+
+        //763 Partition String
+//        System.out.println("763 Partition Labels " + Partition763.partitionLabels("ababcbacadefegdehijhklij"));
+
+        //811 subdomainVisits
+        System.out.println("811 subdomainVisits " + SubDomainVisits.subdomainVisits(new String[]{"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com"}));
+        //814 PruneTree
+        PruneTree.pruneTree(null);
     }
 }
 
